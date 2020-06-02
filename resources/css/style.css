@@ -1,0 +1,39 @@
+/* ------------- BASIC SETUP -------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 20px;
+    word-spacing: 120%;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* ------------- HEADER -------------- */
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 0.70)), url(../img/coding.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.hero{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 200%;
+}
+
+.hero h2{
+    text-align: center;
+    font-size: 100%;
+    font-weight: 300;
+}
+
+/* ------------- EDUCATION -------------- */
+.education
