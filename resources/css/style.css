@@ -11,6 +11,20 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 
+section{
+    width: 1140px;
+    margin: 300px auto ;
+}
+
+section h2{
+    text-align: center;
+    font-size: 200%;
+    margin: 0 auto;
+    width: 470px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #3498db;
+}
+
 /* ------------- HEADER -------------- */
 header{
     background-image: linear-gradient(rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 0.70)), url(../img/coding.jpg);
@@ -35,5 +49,50 @@ header{
     font-weight: 300;
 }
 
-/* ------------- EDUCATION -------------- */
-.education
+
+/* ------------- EDUCATION & CERTIFICATIONS -------------- */
+
+.education, .certifications{
+    padding-left: 200px;
+}
+
+.title{
+    text-align: center;
+    margin-top: 25px;
+    font-size: 150%;
+}
+
+.education{
+    margin-top: 10px;
+}
+
+.years{
+    font-size: 70%;
+    text-align:  right;
+    padding: 5px 280px 0px 0px;
+}
+
+.specialization{
+    font-weight: 450;
+}
+
+.subtitle{
+    font-weight: 300;
+}
+
+.certifications li{
+    list-style-type: none;
+    padding-top: 5px;
+}
+
+.certifications a:visited, .certifications a:link{
+    text-decoration: none;
+    color: #1f5d86;
+}
+
+.certifications a:hover, .certifications a:active{
+    color: black;
+}
+
+
+/* ------------- EDUCATION & CERTIFICATIONS -------------- */
