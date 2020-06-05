@@ -20,14 +20,14 @@ function fixWork()
 }
 
  // ANIMATIONS ON SCROLL
- $('.about-me').waypoint(function(direction){
+ $('.about').waypoint(function(direction){
     console.log("hello");
     $('.about-me').addClass('animate__animated animate__fadeIn');
 },{ 
-    offset: '50%'
+    offset: '60%'
 });
 
-$('.projects').waypoint(function(direction){
+$('.my-work').waypoint(function(direction){
     $('.projects').addClass('animate__animated animate__fadeInUp');
 },{ 
     offset: '65%'
