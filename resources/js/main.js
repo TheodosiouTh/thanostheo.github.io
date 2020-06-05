@@ -24,7 +24,7 @@ function fixWork()
     console.log("hello");
     $('.about-me').addClass('animate__animated animate__fadeIn');
 },{ 
-    offset: '60%'
+    offset: '65%'
 });
 
 $('.my-work').waypoint(function(direction){
