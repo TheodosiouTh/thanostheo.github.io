@@ -12,19 +12,54 @@ body{
     height: 100vh;
 }
 
-section h2{
+section h2, footer h2{
     text-align: center;
     font-size: 200%;
-    margin: 90px auto 0 auto;
+    margin: 140px auto 0 auto;
     padding-bottom: 5px;
     border-bottom: 3px solid #e67e22;
 }
+
+.btn {
+    width: 150px;
+    margin: 20px auto 10px auto;
+
+    border: 0px;
+    border-radius: 25px;
+    color: #fff;
+
+    display: block;
+    font-size: 120%;
+    background-color: #e67e22;
+    transition: background-color 0.5s,border 0.5s, color 0.5s;
+}
+
+.button:hover,.button-ghost:hover{
+    background-color: #cf6d17;
+    color: #fff;
+    border: 0px;
+}
+
+.button-ghost{
+    width: 150px;
+    margin: 20px auto 10px auto;
+
+    border: 0px;
+    border-radius: 25px;
+    color: #e67e22;
+
+    display: block;
+    font-size: 120%;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #e67e22;
+}
+
+
 
 /* ------------- HEADER -------------- */
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/coding.jpg");
     height: 600px;
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -83,21 +118,60 @@ section h2{
 
 .about p{
     text-align: justify;
+    margin: 7px 0px;
 }
 
-.about a{
+
+
+
+/* ------------- My Work -------------- */
+.my-work{
+}
+
+.my-work .title-container{
+    width: 200px;
+    margin: 0px auto;
+}
+
+.projects{
+    margin-top: 50px;
+}
+
+.projects .card{
+    margin: 15px 15px;
+}
+
+.projects .button, .projects .button-ghost{
+    font-size: 100%;
     width: 150px;
-    margin: 20px auto 10px auto;
+}
 
-    border: 0px;
-    border-radius: 25px;
+.check-more .button{
+    text-align: center;
+    margin-top: 50px;
+    width: 189px;
+}
 
-    display: block;
+
+/* ------------- Contact Me -------------- */
+footer{
+    margin-top: 150px;
+}
+
+footer .title-container{
+    width: 300px;
+    margin: 0 auto;
+}
+
+footer .about{
+    margin-top: 25px;
+}
+
+.contact-me{
+    width: 172px;
     font-size: 120%;
-    background-color: #e67e22;
+    margin:40px auto ;
 }
 
-.about a:hover{
-    background-color: #cf6d17;
-    color: #fff;
-}
+
+/* ------------- Media Queries -------------- */
