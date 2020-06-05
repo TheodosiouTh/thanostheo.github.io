@@ -98,7 +98,7 @@ section h2, footer h2{
 
 /* ------------- ABOUT -------------- */
 .about{
-    width: 650px;
+    width: 35%;
     margin: 0 auto;
 }
 
@@ -177,23 +177,29 @@ footer .about{
 
 /* ------------- Media Queries -------------- */
 @media only screen and (max-width: 768px) {
-    .row{
-        width: 100%;
+    .about{
+        width: 95%;
+    }
+    .projects .card{
+        margin: 15px 0px;
+        padding: 0px 0px;
+    }
+
+    .hero-text h1{
+        font-size: 200%;
     }
 }
 
 
 /* ------------- Animations -------------- */
-.js--wp-1,
-.js--wp-2,
-.js--wp-3{
+.projects,
+.about-me{
     opacity: 0;
     -webkit-animation-duration: 1s;
             animation-duration: 1s;
 }
 
-.js--wp-1.animated,
-.js--wp-2.animated,
-.js--wp-3.animated {
+.projects.animated,
+.about-me.animated {
     opacity: 1;
 }
