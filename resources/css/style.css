@@ -126,6 +126,7 @@ section h2, footer h2{
 
 /* ------------- My Work -------------- */
 .my-work{
+    margin-top: 190px !important;
 }
 
 .my-work .title-container{
@@ -175,3 +176,24 @@ footer .about{
 
 
 /* ------------- Media Queries -------------- */
+@media only screen and (max-width: 768px) {
+    .row{
+        width: 100%;
+    }
+}
+
+
+/* ------------- Animations -------------- */
+.js--wp-1,
+.js--wp-2,
+.js--wp-3{
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+    opacity: 1;
+}

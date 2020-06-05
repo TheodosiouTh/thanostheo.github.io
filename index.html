@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html>
-    
-
-
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet"    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
         <link rel="stylesheet" href="resources/css/style.css">
     </head>
-    <body>
+
+    <body onresize="fixWork()">
         <div class="hero-image">
             <div class="hero">
                 <div class="hero-text">
-                    <h1>Thanos Theodosiou</h1>
-                    <p>Full Stack Software Engineer</p>
+                    <h1 class="animate__animated animate__fadeInRight">Thanos Theodosiou</h1>
+                    <p class="animate__animated animate__fadeInLeft">Full Stack Software Engineer</p>
                 </div>
                 <ion-icon name="chevron-down-outline"></ion-icon>
             </div>
@@ -38,7 +37,7 @@
 
                 <div class="projects">
                     <div class="row">
-                        <div class="col col-xs-12 card" style="width: 18rem;">
+                        <div class="col card" style="width: 18rem;">
                             <img src="./resources/img/placeholderProject.jpg" class="card-img-top" alt="Example Project">
                             <div class="card-body">
                                 <h5 class="card-title">Example Project 1</h5>
@@ -48,7 +47,7 @@
                         </div>
 
                         
-                        <div class="col col-xs-12 card" style="width: 18rem;">
+                        <div class="col card" style="width: 18rem;">
                             <img src="./resources/img/placeholderProject.jpg" class="card-img-top" alt="Example Project">
                             <div class="card-body">
                                 <h5 class="card-title">Example Project 2</h5>
@@ -58,7 +57,7 @@
                         </div>
 
                         
-                        <div class="col col-xs-12 card" style="width: 18rem;">
+                        <div class="col card" style="width: 18rem;">
                             <img src="./resources/img/placeholderProject.jpg" class="card-img-top" alt="Example Project">
                             <div class="card-body">
                                 <h5 class="card-title">Example Project 3</h5>
@@ -83,5 +82,6 @@
         </footer>
 
         <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+        <script src="./resources/js/main.js"></script>
     </body>
 </html>
