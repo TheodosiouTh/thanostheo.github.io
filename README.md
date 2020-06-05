@@ -4,4 +4,4 @@
  * Bootstrap for styling
  * Javascript to get responsive design on Bootstrap elements that did not have it
  * Animate.css and JQuery(with Waypoints) for animations
- * Ion Icons
+ * Ion Icons for the down arrow icon on the hero screen
