@@ -166,6 +166,8 @@ footer .title-container{
 
 footer .about{
     margin-top: 25px;
+    text-align: justify;
+    width: 450px;
 }
 
 .contact-me{

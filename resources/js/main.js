@@ -1,18 +1,17 @@
 
 function fixWork()
 {
-    console.log("In")
-    done = false;
     const projects = document.querySelectorAll('.card');
+    console.log();
 
-    if(window.screen.width < 768){
-        projects.forEach((item) => {
+    if(window.innerWidth < 768){
+        projects.forEach(item => {
             item.classList.remove('col');
             item.classList.add('col-12');
         });
     }
     else {
-        projects.forEach((item) => {
+        projects.forEach(item => {
             item.classList.remove('col-12');
             item.classList.add('col');
         });
@@ -21,7 +20,6 @@ function fixWork()
 
  // ANIMATIONS ON SCROLL
  $('.about').waypoint(function(direction){
-    console.log("hello");
     $('.about-me').addClass('animate__animated animate__fadeIn');
 },{ 
     offset: '65%'
