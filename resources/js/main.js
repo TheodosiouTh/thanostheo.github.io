@@ -4,7 +4,7 @@ function fixWork()
     const projects = document.querySelectorAll('.card');
     console.log();
 
-    if(window.innerWidth < 768){
+    if(window.innerWidth < 991){
         projects.forEach(item => {
             item.classList.remove('col');
             item.classList.add('col-12');

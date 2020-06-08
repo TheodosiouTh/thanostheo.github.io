@@ -142,6 +142,14 @@ section h2, footer h2{
     margin: 15px 15px;
 }
 
+.card-title{
+    text-align: center;
+}
+.card-text{
+    font-size: 80%;
+    text-align: justify;
+}
+
 .projects .button, .projects .button-ghost{
     font-size: 100%;
     width: 150px;
@@ -178,10 +186,13 @@ footer .about{
 
 
 /* ------------- Media Queries -------------- */
-@media only screen and (max-width: 768px) {
-    .about{
+@media only screen and (max-width: 460px) {
+    footer .about{
         width: 95%;
     }
+}
+
+@media only screen and (max-width: 768px) {
     .projects .card{
         margin: 15px 0px;
         padding: 0px 0px;
@@ -191,11 +202,29 @@ footer .about{
         font-size: 200%;
     }
 }
-@media only screen and (max-width: 1200px) {
-    .about{
-        width: 70%;
+
+@media only screen and (max-width: 991px) {
+    .projects .card-img-top{
+        width: 100% !important;
+        height: auto !important;
     }
 }
+
+@media only screen and (min-width: 991px) {
+    .projects .card-text{
+        height: 125px;
+        padding: auto auto;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .projects .card-img-top{
+        height: 172px;
+        width: auto;
+    }
+}
+
 
 /* ------------- Animations -------------- */
 .projects,
