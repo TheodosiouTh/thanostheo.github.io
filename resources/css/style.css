@@ -155,6 +155,11 @@ section h2, footer h2{
     width: 150px;
 }
 
+.more  a{
+    padding-top: 10px;
+    font-size: 90% !important;
+}
+
 .check-more .button{
     text-align: center;
     margin-top: 50px;
