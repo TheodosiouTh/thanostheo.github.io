@@ -1,4 +1,3 @@
-
 function fixWork()
 {
     const projects = document.querySelectorAll('.card');
