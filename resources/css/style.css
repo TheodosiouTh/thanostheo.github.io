@@ -192,7 +192,7 @@ footer .about{
 
 /* ------------- Media Queries -------------- */
 @media only screen and (max-width: 460px) {
-    footer .about{
+    footer,.about{
         width: 95%;
     }
 }
@@ -208,6 +208,7 @@ footer .about{
     }
 }
 
+
 @media only screen and (max-width: 991px) {
     .projects .card-img-top{
         width: 100% !important;
@@ -217,7 +218,14 @@ footer .about{
 
 @media only screen and (min-width: 991px) {
     .projects .card-text{
-        height: 125px;
+        height: 270px;
+        padding: auto auto;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .projects .card-text{
+        height: 200px;
         padding: auto auto;
     }
 }
