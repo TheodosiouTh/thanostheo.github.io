@@ -12,13 +12,6 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "settings": {
-    "import/resolver": {
-      "node": {
-        "extensions": [".ts", ".tsx"]
-      }
-    }
-  },
   "plugins": ["react", "react-hooks"],
   "rules": {
     "react-hooks/rules-of-hooks": "error",
