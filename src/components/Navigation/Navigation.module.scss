@@ -1,0 +1,25 @@
+@import '../../global/shared.scss';
+
+.container {
+  height: 100vh;
+  width: 3.25rem;
+
+  position: absolute;
+  left: 0;
+
+  background-color: $background;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.icon {
+  color: $white;
+  font-size: 1.75rem;
+}
+
+.icon:hover {
+  font-size: 2.25rem;
+  transition: font-size 0.125s cubic-bezier(0.53, 0.16, 0.62, 1.02);
+}
