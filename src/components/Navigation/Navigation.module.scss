@@ -17,6 +17,7 @@
 .icon {
   color: $white;
   font-size: 1.75rem;
+  transition: font-size 0.125s cubic-bezier(0.53, 0.16, 0.62, 1.02);
 }
 
 .icon:hover {
