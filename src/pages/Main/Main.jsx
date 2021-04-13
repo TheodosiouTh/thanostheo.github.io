@@ -15,12 +15,12 @@ export default function Index() {
       <Router>
         <Navigation />
         <Switch>
-          <Route path="/">Main</Route>
           <Route path="/projects">Projects</Route>
           <Route path="/blogs">Blogs</Route>
           <Route path="/about">
             <About />
           </Route>
+          <Route path="/">Main</Route>
         </Switch>
       </Router>
     </div>
