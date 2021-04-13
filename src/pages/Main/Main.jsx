@@ -6,21 +6,21 @@ import styles from './Main.module.scss';
 /* COMPONENTS */
 import Navigation from '../../components/Navigation/Navigation';
 
+/* PAGES */
+import About from '../About/About';
+
 export default function Index() {
   return (
     <div className={styles.container}>
       <Router>
         <Navigation />
         <Switch>
-          <Route path="/">
-            <div className={styles.heading}>
-              <p className={styles.name}>Thanos Theodosiou</p>
-              <p className={styles.title}>Software Engineer</p>
-            </div>
-          </Route>
+          <Route path="/">Main</Route>
           <Route path="/projects">Projects</Route>
           <Route path="/blogs">Blogs</Route>
-          <Route path="/about">About</Route>
+          <Route path="/about">
+            <About />
+          </Route>
         </Switch>
       </Router>
     </div>
