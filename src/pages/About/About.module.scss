@@ -7,12 +7,40 @@
   background-color: $surface;
 }
 
-.pageHead {
-  font-size: 3rem;
-  font-weight: 500;
-  width: 100%;
-  text-align: left;
+.pageContent {
+  padding: $content-padding;
 }
 
-.pageContainer {
+.pageHead {
+  font-size: 3rem;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.mainInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .personalImage {
+    width: 10rem;
+    height: auto;
+    border-radius: 50%;
+    border: 0.25rem solid $secondary;
+  }
+
+  .personalMessage {
+    font-size: 1.5rem;
+
+    max-width: 100%;
+    padding-left: 0.75rem;
+  }
+}
+
+.subInfo {
+  p {
+    margin-top: 1rem;
+  }
 }
