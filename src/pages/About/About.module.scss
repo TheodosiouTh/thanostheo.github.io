@@ -20,7 +20,7 @@
 .pageHead {
   font-size: 3rem;
   font-weight: 700;
-  width: 100%;
+  max-width: 100%;
   text-align: center;
   margin-bottom: 1.25rem;
 }
@@ -53,7 +53,7 @@
 }
 
 .links {
-  width: 100%;
+  max-width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 1.25rem;
@@ -86,5 +86,89 @@
   .social {
     flex: 0 0 75%;
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: $large-screen) {
+  .container {
+    width: $content-width-medium;
+  }
+}
+
+@media only screen and (max-width: $medium-screen) {
+  .container {
+    width: $content-width-small;
+  }
+}
+
+@media only screen and (max-width: $small-screen) {
+  .container {
+    width: $content-width-xsmall;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .pageContent {
+    padding: 1.25rem;
+  }
+
+  .mainInfo {
+    flex-direction: column;
+
+    .personalImage {
+      width: 7rem;
+      border: 0.25rem solid $secondary;
+      margin-bottom: 1rem;
+    }
+
+    .personalMessage {
+      padding-left: 0;
+      font-size: 1.325rem;
+    }
+  }
+
+  .subInfo {
+    p {
+      margin-top: 0.5rem;
+    }
+  }
+
+  .links {
+    button {
+      svg {
+        font-size: 1.5rem;
+      }
+    }
+    button:hover {
+      svg {
+        color: $white;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $xsmall-screen) {
+  .container {
+    width: $content-width-xsmall;
+    border-radius: 0;
+  }
+  .mainInfo {
+    flex-direction: column;
+
+    .personalImage {
+      width: 7rem;
+      border: 0.25rem solid $secondary;
+      margin-bottom: 1rem;
+    }
+
+    .personalMessage {
+      padding-left: 0;
+    }
+  }
+
+  .subInfo {
+    p {
+      margin-top: 0.5rem;
+    }
   }
 }
