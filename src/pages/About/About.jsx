@@ -18,7 +18,7 @@ export default function Index() {
   return (
     <div className={styles.container}>
       <div className={styles.pageContent}>
-        <div className={styles.pageHead}>About</div>
+        <header className={styles.pageHead}>About</header>
         <section className={styles.mainInfo}>
           <img
             src={`${PUBLIC_URL}/assets/images/me.jpg`}
