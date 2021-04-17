@@ -1,10 +1,18 @@
 import React from 'react';
 
-import { LinkedIn, GitHub, Instagram } from '@material-ui/icons';
+import {
+  LinkedIn,
+  GitHub,
+  Instagram,
+  FileCopy,
+  Email,
+} from '@material-ui/icons';
 
 import { IconLink } from '../../components/Links/Links';
 
 import styles from './About.module.scss';
+
+const { PUBLIC_URL } = process.env;
 
 export default function Index() {
   return (
@@ -13,7 +21,7 @@ export default function Index() {
         <div className={styles.pageHead}>About</div>
         <section className={styles.mainInfo}>
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/me.jpg`}
+            src={`${PUBLIC_URL}/assets/images/me.jpg`}
             alt="Thanos Theodosiou"
             className={styles.personalImage}
           />
@@ -72,21 +80,40 @@ export default function Index() {
           </p>
         </section>
         <section className={styles.links}>
-          <IconLink
-            title="LinkedIn Page"
-            route="https://www.linkedin.com/in/thanos-theodosiou-61365b18b/"
-          >
-            <LinkedIn />
-          </IconLink>
-          <IconLink title="Github Page" route="https://github.com/TheodosiouTh">
-            <GitHub />
-          </IconLink>
-          <IconLink
-            title="Instagram Page"
-            route="https://www.instagram.com/thanoswasbusy/"
-          >
-            <Instagram />
-          </IconLink>
+          <div className={styles.resume}>
+            <IconLink
+              title="Resume"
+              route={`${PUBLIC_URL}/assets/images/me.jpg`}
+              download
+            >
+              <FileCopy />
+            </IconLink>
+          </div>
+          <div className={styles.social}>
+            <IconLink
+              title="LinkedIn Page"
+              route="https://www.linkedin.com/in/thanos-theodosiou-61365b18b/"
+            >
+              <LinkedIn />
+            </IconLink>
+            <IconLink
+              title="Github Page"
+              route="https://github.com/TheodosiouTh"
+            >
+              <GitHub />
+            </IconLink>
+            <IconLink
+              title="Instagram Page"
+              route="https://www.instagram.com/thanoswasbusy/"
+            >
+              <Instagram />
+            </IconLink>
+          </div>
+          <div className={styles.contact}>
+            <IconLink title="Contact" route="mailto:thanosthd@gmail.com">
+              <Email />
+            </IconLink>
+          </div>
         </section>
       </div>
     </div>
