@@ -1,0 +1,18 @@
+@import '../../global/shared.scss';
+
+.container {
+  width: $content-container-width;
+  height: 80vh;
+  margin: auto;
+  background-color: $surface;
+}
+
+.pageHead {
+  font-size: 3rem;
+  font-weight: 500;
+  width: 100%;
+  text-align: left;
+}
+
+.pageContainer {
+}
