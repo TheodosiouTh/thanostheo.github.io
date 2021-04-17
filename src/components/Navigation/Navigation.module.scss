@@ -1,8 +1,14 @@
 @import '../../global/shared.scss';
 
+.toggle {
+  display: none;
+  z-index: 2;
+}
+
 .container {
   height: 100vh;
   width: 3.25rem;
+  z-index: 1;
 
   display: flex;
   flex-direction: column;
@@ -21,8 +27,34 @@
     background-color: $surface;
 
     svg {
-      font-size: 2.5rem;
-      transition: font-size 0.125s $base-bezier;
+      font-size: 1.75rem;
     }
+  }
+}
+
+@media only screen and (max-width: $small-screen) {
+  .toggle {
+    display: block;
+    position: fixed;
+
+    background-color: none;
+
+    button {
+      svg {
+        color: white;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .container {
+    position: fixed;
+    left: -3.25rem;
+    background-color: $background;
+    transition: left 0.25s $base-bezier;
+  }
+  .open {
+    left: 0;
+    transition: left 0.25s $base-bezier;
   }
 }
