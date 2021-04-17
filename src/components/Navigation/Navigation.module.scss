@@ -4,20 +4,25 @@
   height: 100vh;
   width: 3.25rem;
 
-  background-color: $background;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
 
-.icon {
-  color: $white;
-  font-size: 1.75rem;
-  transition: font-size 0.125s cubic-bezier(0.53, 0.16, 0.62, 1.02);
-}
+  button {
+    color: $white;
 
-.icon:hover {
-  font-size: 2.25rem;
-  transition: font-size 0.125s cubic-bezier(0.53, 0.16, 0.62, 1.02);
+    svg {
+      font-size: 1.75rem;
+      transition: font-size 0.125s $base-bezier;
+    }
+  }
+
+  button:hover {
+    background-color: $surface;
+
+    svg {
+      font-size: 2.5rem;
+      transition: font-size 0.125s $base-bezier;
+    }
+  }
 }

@@ -17,16 +17,16 @@ export default function Sidemenu() {
   return (
     <div className={styles.container}>
       <IconRoute title="Index" route="/">
-        <HomeIcon className={styles.icon} />
+        <HomeIcon />
       </IconRoute>
       <IconRoute title="Projects" route="/projects">
-        <ComputerIcon className={styles.icon} />
+        <ComputerIcon />
       </IconRoute>
       <IconRoute title="Blog" route="/blogs">
-        <NoteIcon className={styles.icon} />
+        <NoteIcon />
       </IconRoute>
       <IconRoute title="About Me" route="/about">
-        <InfoIcon className={styles.icon} />
+        <InfoIcon />
       </IconRoute>
     </div>
   );
