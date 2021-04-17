@@ -8,7 +8,7 @@ import {
   Info as InfoIcon,
 } from '@material-ui/icons';
 
-/* COMPONENTS */
+/* SUB-COMPONENTS */
 import NavigationLink from './NavigationLink';
 
 import styles from './Navigation.module.scss';
