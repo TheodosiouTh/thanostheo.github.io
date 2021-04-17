@@ -14,13 +14,14 @@ export function IconRoute({ title, route, children }) {
   );
 }
 
-export function IconLink({ title, route, children }) {
+export function IconLink({ title, route, download, children }) {
   return (
     <a
       target="_blank"
       href={route}
       className={styles.container}
       rel="noreferrer"
+      download={download}
     >
       <IconButton title={title}>{children}</IconButton>
     </a>
