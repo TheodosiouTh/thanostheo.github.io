@@ -9,25 +9,25 @@ import {
 } from '@material-ui/icons';
 
 /* SUB-COMPONENTS */
-import NavigationLink from './NavigationLink';
+import { IconRoute } from '../Links/Links';
 
 import styles from './Navigation.module.scss';
 
 export default function Sidemenu() {
   return (
     <div className={styles.container}>
-      <NavigationLink title="Index" route="/">
+      <IconRoute title="Index" route="/">
         <HomeIcon className={styles.icon} />
-      </NavigationLink>
-      <NavigationLink title="Projects" route="/projects">
+      </IconRoute>
+      <IconRoute title="Projects" route="/projects">
         <ComputerIcon className={styles.icon} />
-      </NavigationLink>
-      <NavigationLink title="Blog" route="/blogs">
+      </IconRoute>
+      <IconRoute title="Blog" route="/blogs">
         <NoteIcon className={styles.icon} />
-      </NavigationLink>
-      <NavigationLink title="About Me" route="/about">
+      </IconRoute>
+      <IconRoute title="About Me" route="/about">
         <InfoIcon className={styles.icon} />
-      </NavigationLink>
+      </IconRoute>
     </div>
   );
 }
