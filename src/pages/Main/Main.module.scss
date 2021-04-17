@@ -6,6 +6,8 @@
 
   display: flex;
   direction: row;
+
+  background-color: $background;
 }
 
 .heading {
@@ -20,4 +22,8 @@
   .title {
     font-size: 3rem;
   }
+}
+
+.pages {
+  width: 100%;
 }

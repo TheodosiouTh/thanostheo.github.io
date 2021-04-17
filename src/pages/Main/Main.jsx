@@ -14,14 +14,16 @@ export default function Index() {
     <div className={styles.container}>
       <Router>
         <Navigation />
-        <Switch>
-          <Route path="/projects">Projects</Route>
-          <Route path="/blogs">Blogs</Route>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/">Main</Route>
-        </Switch>
+        <div className={styles.pages}>
+          <Switch>
+            <Route path="/projects">Projects</Route>
+            <Route path="/blogs">Blogs</Route>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="/">Main</Route>
+          </Switch>
+        </div>
       </Router>
     </div>
   );
