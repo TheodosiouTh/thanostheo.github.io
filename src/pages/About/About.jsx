@@ -14,7 +14,7 @@ import styles from './About.module.scss';
 
 const { PUBLIC_URL } = process.env;
 
-export default function Index() {
+export default function About() {
   return (
     <div className={styles.container}>
       <div className={styles.pageContent}>
