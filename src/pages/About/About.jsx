@@ -14,7 +14,7 @@ import styles from './About.module.scss';
 
 const { PUBLIC_URL } = process.env;
 
-export default function Index() {
+export default function About() {
   return (
     <div className={styles.container}>
       <div className={styles.pageContent}>
@@ -30,8 +30,8 @@ export default function Index() {
             Developer (leaning more towards Backend) with a Bachelor&#39;s
             Degree in Computer Science (
             <i>
-              with a specialization in Software Engineering and Artificial
-              Intelligence Systems
+              with a specialization in Software Engineering and Artificially
+              Intelligent Systems
             </i>
             ). Ever since I was a child I was fascinated by computers, that is
             why in 8th grade I decided to pick up a C++ book and study it as a

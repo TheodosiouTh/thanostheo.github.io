@@ -17,6 +17,7 @@
     "import/no-unresolved": [2, { "caseSensitive": false }],
     "react/prop-types": 0,
     "object-curly-newline": 0,
+    "no-unused-vars": "warn",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
