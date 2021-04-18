@@ -27,7 +27,8 @@ export default function Index() {
           />
           <p className={styles.personalMessage}>
             Hello, my name is Thanos Theodosiou. I am a Full Stack Software
-            Developer with a Bachelor&#39;s Degree in Computer Science (
+            Developer (leaning more towards Backend) with a Bachelor&#39;s
+            Degree in Computer Science (
             <i>
               with a specialization in Software Engineering and Artificial
               Intelligence Systems
