@@ -25,58 +25,19 @@ export default function Index() {
             alt="Thanos Theodosiou"
             className={styles.personalImage}
           />
-          <div className={styles.personalMessage}>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod,
-            repellendus aut maxime nam explicabo, minima reprehenderit quas
-            optio exercitationem totam id. Ut aspernatur id at quaerat modi vero
-            blanditiis consectetur?
-          </div>
-        </section>
-        <section className={styles.subInfo}>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-            sint, nulla voluptatum laudantium adipisci animi iste impedit
-            exercitationem deleniti consequuntur perferendis corporis. Impedit
-            veniam labore blanditiis at et pariatur ducimus iste, rem voluptates
-            perferendis non quo laborum cupiditate expedita aliquid asperiores
-            porro atque commodi necessitatibus eaque eum deleniti. Temporibus,
-            excepturi. Illo recusandae eius dolore quis reiciendis consequatur
-            excepturi placeat fuga? Itaque accusantium hic id provident earum
-            magnam aut aperiam nulla numquam amet error natus quas, ex minima
-            labore quaerat, exercitationem dolore similique alias molestias
-            dolor velit eos? Officia corporis cupiditate quisquam molestiae
-            doloribus repudiandae, ut odit voluptatibus, amet voluptates
-            perferendis!
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-            sint, nulla voluptatum laudantium adipisci animi iste impedit
-            exercitationem deleniti consequuntur perferendis corporis. Impedit
-            veniam labore blanditiis at et pariatur ducimus iste, rem voluptates
-            perferendis non quo laborum cupiditate expedita aliquid asperiores
-            porro atque commodi necessitatibus eaque eum deleniti. Temporibus,
-            excepturi. Illo recusandae eius dolore quis reiciendis consequatur
-            excepturi placeat fuga? Itaque accusantium hic id provident earum
-            magnam aut aperiam nulla numquam amet error natus quas, ex minima
-            labore quaerat, exercitationem dolore similique alias molestias
-            dolor velit eos? Officia corporis cupiditate quisquam molestiae
-            doloribus repudiandae, ut odit voluptatibus, amet voluptates
-            perferendis!
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-            sint, nulla voluptatum laudantium adipisci animi iste impedit
-            exercitationem deleniti consequuntur perferendis corporis. Impedit
-            veniam labore blanditiis at et pariatur ducimus iste, rem voluptates
-            perferendis non quo laborum cupiditate expedita aliquid asperiores
-            porro atque commodi necessitatibus eaque eum deleniti. Temporibus,
-            excepturi. Illo recusandae eius dolore quis reiciendis consequatur
-            excepturi placeat fuga? Itaque accusantium hic id provident earum
-            magnam aut aperiam nulla numquam amet error natus quas, ex minima
-            labore quaerat, exercitationem dolore similique alias molestias
-            dolor velit eos? Officia corporis cupiditate quisquam molestiae
-            doloribus repudiandae, ut odit voluptatibus, amet voluptates
-            perferendis!
+          <p className={styles.personalMessage}>
+            Hello, my name is Thanos Theodosiou. I am a Full Stack Software
+            Developer with a Bachelor&#39;s Degree in Computer Science (
+            <i>
+              with a specialization in Software Engineering and Artificial
+              Intelligence Systems
+            </i>
+            ). Ever since I was a child I was fascinated by computers, that is
+            why in 8th grade I decided to pick up a C++ book and study it as a
+            hobby. To me implementing the things I read there on the computer
+            and seeing it respond to my code was something out of this world. So
+            here I am a few years later doing something I feel like I was born
+            to do.
           </p>
         </section>
         <section className={styles.links}>
