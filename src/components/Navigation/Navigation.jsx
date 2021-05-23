@@ -30,7 +30,7 @@ export default function Sidemenu() {
       <aside className={cn(styles.container, { [styles.openMenu]: isMenuOpen })}>
         <nav>
           {links.map((link) => (
-            <a href="/#" className={styles.navigationLinks}>{link}</a>
+            <a href="/#" className={styles.navigationLinks} key={link}>{link}</a>
           ))}
           <a href="/assets/images/me.jpg" download className={styles.linkButton}>Resume</a>
         </nav>
