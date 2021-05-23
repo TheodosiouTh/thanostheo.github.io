@@ -6,8 +6,6 @@ html,
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-  background-color: $background;
 }
 
 body {
@@ -15,6 +13,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 1.125rem;
+  background-color: $background;
 }
 
 code {
