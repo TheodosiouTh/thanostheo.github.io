@@ -3,18 +3,14 @@ import cn from 'classnames';
 
 /* ICONS */
 import {
-  Home as HomeIcon,
-  Computer as ComputerIcon,
-  Note as NoteIcon,
-  Info as InfoIcon,
   Menu as MenuIcon,
 } from '@material-ui/icons';
 
 /* SUB-COMPONENTS */
 import { IconButton } from '@material-ui/core';
-import { IconRoute } from '../Links/Links';
-
 import styles from './Navigation.module.scss';
+
+const links = ['About', 'Experience', 'Projects'];
 
 export default function Sidemenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,18 +32,10 @@ export default function Sidemenu() {
           [styles.open]: isMenuOpen,
         })}
       >
-        <IconRoute title="Index" route="/">
-          <HomeIcon />
-        </IconRoute>
-        <IconRoute title="Projects" route="/projects">
-          <ComputerIcon />
-        </IconRoute>
-        <IconRoute title="Blog" route="/blogs">
-          <NoteIcon />
-        </IconRoute>
-        <IconRoute title="About Me" route="/about">
-          <InfoIcon />
-        </IconRoute>
+        {links.map((link) => (
+          <a href="/#" className={styles.navigationLinks}>{link}</a>
+        ))}
+        <a href="/assets/images/me.jpg" download className={styles.linkButton}>Resume</a>
       </div>
     </>
   );
