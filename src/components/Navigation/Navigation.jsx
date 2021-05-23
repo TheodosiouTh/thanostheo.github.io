@@ -27,16 +27,16 @@ export default function Sidemenu() {
           <MenuIcon />
         </IconButton>
       </div>
-      <div
-        className={cn(styles.container, {
-          [styles.open]: isMenuOpen,
-        })}
-      >
-        {links.map((link) => (
-          <a href="/#" className={styles.navigationLinks}>{link}</a>
-        ))}
-        <a href="/assets/images/me.jpg" download className={styles.linkButton}>Resume</a>
-      </div>
+      <aside className={styles.container}>
+        <nav
+          className={cn({ [styles.open]: isMenuOpen })}
+        >
+          {links.map((link) => (
+            <a href="/#" className={styles.navigationLinks}>{link}</a>
+          ))}
+          <a href="/assets/images/me.jpg" download className={styles.linkButton}>Resume</a>
+        </nav>
+      </aside>
     </>
   );
 }
