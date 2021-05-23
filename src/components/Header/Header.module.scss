@@ -1,0 +1,29 @@
+@import '../../global/shared.scss';
+
+.toggle {
+  display: none;
+  z-index: 2;
+}
+
+.container {
+  margin: 0 3.125rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  color: $primary;
+  font-weight: 800;
+
+  .logo {
+    font-size: 2.5rem;
+    margin-top: 0.25rem;
+    margin-left: 1.25rem;
+  }
+
+  .rightSide {
+    position: relative;
+    margin-left: auto;
+    right: 0;
+  }
+}
