@@ -20,3 +20,12 @@
     right: 0;
   }
 }
+@media screen and (max-width: $small-screen) {
+  .container {
+    margin: 0.5rem 1.25rem;
+
+    .logo {
+      margin-left: 0.25rem;
+    }
+  }
+}
