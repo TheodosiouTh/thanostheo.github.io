@@ -27,10 +27,8 @@ export default function Sidemenu() {
           <MenuIcon />
         </IconButton>
       </div>
-      <aside className={styles.container}>
-        <nav
-          className={cn({ [styles.open]: isMenuOpen })}
-        >
+      <aside className={cn(styles.container, { [styles.openMenu]: isMenuOpen })}>
+        <nav>
           {links.map((link) => (
             <a href="/#" className={styles.navigationLinks}>{link}</a>
           ))}
