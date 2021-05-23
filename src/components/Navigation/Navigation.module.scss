@@ -1,10 +1,5 @@
 @import '../../global/shared.scss';
 
-.toggle {
-  display: none;
-  z-index: 2;
-}
-
 .container {
   font-weight: 500;
 
@@ -35,4 +30,19 @@
   padding: 0.5rem 0.75rem;
   border: 1px solid $primary;
   border-radius: 0.5rem;
+}
+
+.toggle {
+  display: none;
+
+  right: 1rem;
+  top: 0.5rem;
+
+  z-index: 1;
+
+  button svg {
+    color: $primary;
+    z-index: 1;
+    font-size: 2rem;
+  }
 }
