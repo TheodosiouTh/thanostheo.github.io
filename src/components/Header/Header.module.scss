@@ -1,19 +1,12 @@
 @import '../../global/shared.scss';
 
-.toggle {
-  display: none;
-  z-index: 2;
-}
-
 .container {
   margin: 0 3.125rem;
 
   display: flex;
   flex-direction: row;
   align-items: center;
-
   color: $primary;
-  font-weight: 800;
 
   .logo {
     font-size: 2.5rem;
