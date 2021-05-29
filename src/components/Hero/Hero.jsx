@@ -36,7 +36,7 @@ export default function Hero() {
         to manage for managers.
       </p>
       <div className={styles.contact}>
-        <a href="mail-to:thanosthd@gmail.com">Get in touch</a>
+        <a href="mailto:thanosthd@gmail.com">Get in touch</a>
       </div>
     </div>
   );
