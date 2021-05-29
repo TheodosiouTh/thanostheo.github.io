@@ -10,6 +10,7 @@ function App() {
   return (
     <div className={styles.App}>
       <Header />
+      <Main />
       <Particles
         className={styles.particles}
         params={{
@@ -32,7 +33,6 @@ function App() {
             },
           } }}
       />
-      <Main />
     </div>
   );
 }
