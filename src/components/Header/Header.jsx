@@ -1,7 +1,6 @@
 import React from 'react';
 
-// TEMP LOGO
-import Logo from '@material-ui/icons/AddCircleOutline';
+import { ReactComponent as Logo } from '../../global/Logo.svg';
 
 /* SUB-COMPONENTS */
 import Navigation from '../Navigation/Navigation';
