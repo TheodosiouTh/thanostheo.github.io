@@ -1,6 +1,8 @@
 import React from 'react';
+import Typist from 'react-typist';
 
 import styles from './Hero.module.scss';
+import './cursor.scss';
 
 export default function Hero() {
   return (
@@ -8,9 +10,21 @@ export default function Hero() {
       <div className={styles.intro}>
         Hello, my name is
       </div>
-      <div className={styles.name}>
-        Thanos Theodosiou.
-      </div>
+      <Typist
+        className={styles.name}
+        delay={1500}
+        cursor={{
+          show: true,
+          blink: true,
+          hideWhenDone: true,
+          hideWhenDoneDelay: 3500,
+        }}
+      >
+        <Typist.Delay ms={650} />
+        Thanos Theodosou
+        <Typist.Backspace count={2} delay={150} />
+        iou.
+      </Typist>
       <p className={styles.introduction}>
         I am a Software engineer based in Athens who specializes in
         developing exceptional server-side Applications.
