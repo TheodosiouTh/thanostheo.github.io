@@ -4,27 +4,44 @@
   font-weight: 500;
   a {
     text-decoration: none;
+    margin-right: 1.5rem;
+    font-size: 1rem;
   }
 }
 
-.navigationLinks {
-  margin-right: 1.5rem;
-  font-size: 1rem;
-  color: $secondary;
-  transition: color 0.15s $base-bezier;
-}
+ol {
+  display: flex;
+  align-items: baseline;
 
-.navigationLinks:hover {
-  color: $primary;
-  transition: color 0.15s $base-bezier;
-}
+  li {
+    margin-left: 1rem;
+    opacity: 0;
+    animation: fadeIn 0.25s $base-bezier both;
 
-.linkButton {
-  color: $primary;
-  font-size: 1.25rem;
-  padding: 0.5rem 0.75rem;
-  border: 1px solid $primary;
-  border-radius: 0.5rem;
+    a {
+      color: $secondary;
+      margin-left: 0.25rem;
+      transition: color 0.1s $base-bezier;
+    }
+
+    a:hover {
+      color: $primary;
+      transition: color 0.1s $base-bezier;
+    }
+  }
+
+  .linkButton {
+    list-style-type: none;
+    margin-left: 0rem;
+
+    a {
+      color: $primary;
+      margin-left: 0;
+      padding: 0.75rem 1.75rem;
+      border: 1px solid $primary;
+      border-radius: 0.5rem;
+    }
+  }
 }
 
 .toggle {
@@ -84,5 +101,16 @@
   .openMenu {
     right: 0rem;
     transition: right 0.25s $base-bezier;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -50%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
 }
