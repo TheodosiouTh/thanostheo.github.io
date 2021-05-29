@@ -54,3 +54,37 @@ a {
     transition: background-color 0.2s $base-bezier;
   }
 }
+
+@media screen and (max-width: $small-screen) {
+  .container {
+    padding-left: 0.75rem;
+    height: 100vh;
+    min-height: -webkit-fill-available;
+  }
+
+  .intro {
+    font-size: 1rem;
+  }
+
+  .name {
+    padding-top: 0.5rem;
+    font-weight: 600;
+    font-size: 1.75rem !important;
+  }
+
+  .introduction {
+    font-size: 0.875rem;
+    width: 100%;
+  }
+
+  .contact {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: $xsmall-screen) {
+  .name {
+    font-weight: 600;
+    font-size: 3.25rem;
+  }
+}
