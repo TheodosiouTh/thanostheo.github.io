@@ -55,7 +55,7 @@ ol {
     display: inline-block;
     position: fixed;
     right: 0.25rem;
-    top: 0rem;
+    top: 0;
   }
 
   .container {
@@ -96,7 +96,7 @@ ol {
     }
   }
   .openMenu {
-    right: 0rem;
+    right: 0;
     transition: right 0.125s $base-bezier;
   }
 }
