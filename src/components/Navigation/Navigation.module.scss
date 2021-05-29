@@ -52,7 +52,7 @@ ol {
 
 @media screen and (max-width: $xsmall-screen) {
   .toggle {
-    display: inline-block;
+    display: block;
     position: fixed;
     right: 0.25rem;
     top: 0;
@@ -65,11 +65,11 @@ ol {
     align-items: center;
 
     height: 100vh;
-    width: 18rem;
+    width: 15rem;
     right: -18rem;
 
     position: fixed;
-    bottom: 0;
+    top: 0;
     transition: right 0.125s $base-bezier;
 
     background-color: $surface;
