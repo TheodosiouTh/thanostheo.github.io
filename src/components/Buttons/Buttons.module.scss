@@ -1,0 +1,53 @@
+@import '../../global/shared.scss';
+
+.NavigationToggle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.NavigationToggleBurger {
+  width: 3.125rem;
+  height: 0.375rem;
+  background: $primary;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.NavigationToggleBurger::before,
+.NavigationToggleBurger::after {
+  content: '';
+  position: absolute;
+  width: 3.125rem;
+  height: 0.375rem;
+  left: 50%;
+  margin-left: -1.5rem;
+  background: $primary;
+  border-radius: 0.3125rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.NavigationToggleBurger::before {
+  transform: translateY(-1rem);
+}
+
+.NavigationToggleBurger::after {
+  transform: translateY(1rem);
+}
+
+.NavigationToggle.open .NavigationToggleBurger {
+  transform: translateX(-3.125rem);
+  background: transparent;
+  box-shadow: none;
+}
+.NavigationToggle.open .NavigationToggleBurger::before {
+  transform: rotate(45deg) translate(2.1875rem, -2.1875rem);
+}
+.NavigationToggle.open .NavigationToggleBurger::after {
+  transform: rotate(-45deg) translate(2.1875rem, 2.1875rem);
+}

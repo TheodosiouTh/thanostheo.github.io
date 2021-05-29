@@ -1,60 +1,113 @@
 @import '../../global/shared.scss';
 
+.container {
+  font-weight: 500;
+  a {
+    text-decoration: none;
+    margin-right: 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+ol {
+  display: flex;
+  align-items: baseline;
+  list-style-type: none;
+
+  li {
+    opacity: 0;
+    animation: fadeIn 0.25s $base-bezier both;
+
+    a {
+      color: $secondary;
+      transition: color 0.1s $base-bezier;
+    }
+
+    a:hover {
+      color: $primary;
+      transition: color 0.1s $base-bezier;
+    }
+  }
+
+  .linkButton {
+    a {
+      color: $primary;
+      padding: 0.75rem 1.75rem;
+      border: 1px solid $primary;
+      border-radius: 0.5rem;
+    }
+  }
+}
+
 .toggle {
   display: none;
-  z-index: 2;
-}
-
-.container {
-  height: 100vh;
-  width: 3.25rem;
   z-index: 1;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  button {
-    color: $white;
-
-    svg {
-      font-size: 1.75rem;
-      transition: font-size 0.125s $base-bezier;
-    }
-  }
-
-  button:hover {
-    background-color: $surface;
-
-    svg {
-      font-size: 3.25rem;
-    }
+  button svg {
+    color: $primary;
+    z-index: 1;
+    font-size: 2rem;
   }
 }
 
-@media only screen and (max-width: $small-screen) {
+@media screen and (max-width: $xsmall-screen) {
   .toggle {
-    display: block;
+    display: inline-block;
     position: fixed;
-
-    background-color: none;
-
-    button {
-      svg {
-        color: white;
-        font-size: 1.5rem;
-      }
-    }
+    right: 0.25rem;
+    top: 0;
   }
 
   .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 18rem;
+    right: -18rem;
+
     position: fixed;
-    left: -3.25rem;
-    background-color: $background;
-    transition: left 0.25s $base-bezier;
+    bottom: 0;
+    transition: right 0.125s $base-bezier;
+
+    background-color: $surface;
+
+    a {
+      margin: 0;
+      font-size: 1.325rem;
+    }
+
+    nav {
+      ol {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        li {
+          margin-top: 0.75rem;
+        }
+
+        .linkButton {
+          margin-top: 2rem;
+        }
+      }
+    }
   }
-  .open {
-    left: 0;
-    transition: left 0.25s $base-bezier;
+  .openMenu {
+    right: 0;
+    transition: right 0.125s $base-bezier;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -50%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
 }
