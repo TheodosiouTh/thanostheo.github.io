@@ -8,19 +8,22 @@ export default function Hero() {
       <div className={styles.intro}>
         Hello, my name is
       </div>
-      <div className={styles.title}>
-        Thanos Theodosiou
+      <div className={styles.name}>
+        Thanos Theodosiou.
       </div>
-      <div className={styles.introduction}>
+      <p className={styles.introduction}>
         I am a Software engineer based in Athens who specializes in
-        developing exceptional Applications that help people stress less
-        about mundane tasks and focus more on things that matter more.
+        developing exceptional server-side Applications.
+        {' '}
+        <br />
         Currently, I am an engineer at
         <a href="https://thinkdesquared.com/"> Desquared </a>
-        focused on making online shopping more accessible for consumers and easier
-        to manage for store managers.
+        focused on making online shopping more accessible to consumers and easier
+        to manage for managers.
+      </p>
+      <div className={styles.contact}>
+        <a href="mail-to:thanosthd@gmail.com">Get in touch</a>
       </div>
-      <a href="mail-to:thanosthd@gmail.com">Get in touch</a>
     </div>
   );
 }
