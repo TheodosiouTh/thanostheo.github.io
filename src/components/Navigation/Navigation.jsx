@@ -29,10 +29,26 @@ export default function Sidemenu() {
       </div>
       <aside className={cn(styles.container, { [styles.openMenu]: isMenuOpen })}>
         <nav>
-          {links.map((link) => (
-            <a href="/#" className={styles.navigationLinks} key={link}>{link}</a>
-          ))}
-          <a href="/assets/images/me.jpg" download className={styles.linkButton}>Resume</a>
+          <ol>
+            {links.map((link, index) => (
+              <li
+                style={{ animationDelay: `${150 * index}ms` }}
+                key={link}
+              >
+                <a
+                  href="/#"
+                >
+                  {link}
+                </a>
+              </li>
+            ))}
+            <li
+              className={styles.linkButton}
+              style={{ animationDelay: `${150 * (links.length + 1)}ms` }}
+            >
+              <a href="/assets/images/me.jpg" download>Resume</a>
+            </li>
+          </ol>
         </nav>
       </aside>
     </>
