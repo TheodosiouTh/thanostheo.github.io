@@ -1,13 +1,9 @@
 import React, { useState } from 'react';
 import cn from 'classnames';
 
-/* ICONS */
-import {
-  Menu as MenuIcon,
-} from '@material-ui/icons';
-
 /* SUB-COMPONENTS */
 import { IconButton } from '@material-ui/core';
+import { NavigationToggle } from '../Buttons/Buttons';
 import styles from './Navigation.module.scss';
 
 const links = ['About', 'Experience', 'Projects'];
@@ -24,7 +20,7 @@ export default function Sidemenu() {
           }}
           aria-label="Toggle Menu"
         >
-          <MenuIcon />
+          <NavigationToggle isOpen={isMenuOpen} />
         </IconButton>
       </div>
       <aside className={cn(styles.container, { [styles.openMenu]: isMenuOpen })}>

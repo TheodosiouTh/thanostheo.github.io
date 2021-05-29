@@ -41,10 +41,6 @@ ol {
 
 .toggle {
   display: none;
-
-  right: 1rem;
-  top: 0.5rem;
-
   z-index: 1;
 
   button svg {
@@ -58,6 +54,8 @@ ol {
   .toggle {
     display: inline-block;
     position: fixed;
+    right: 0.25rem;
+    top: 0rem;
   }
 
   .container {
