@@ -42,10 +42,10 @@ a {
   margin-top: 3rem;
   font-size: 1.25rem;
   a {
-    border: 1px solid $primary;
+    border: 1px solid $accent;
     border-radius: 0.25rem;
     padding: 1rem 2rem;
-    color: $primary;
+    color: $accent;
     transition: background-color 0.2s $base-bezier;
   }
 
