@@ -5,6 +5,8 @@ import styles from './Hero.module.scss';
 import './cursor.scss';
 
 export default function Hero() {
+  const email = process.env.REACT_APP_EMAIL;
+
   return (
     <div className={styles.container}>
       <div className={styles.intro}>
@@ -36,7 +38,7 @@ export default function Hero() {
         to manage for managers.
       </p>
       <div className={styles.contact}>
-        <a href="mailto:thanosthd@gmail.com">Get in touch</a>
+        <a href={`mailto:${email}`}>Get in touch</a>
       </div>
     </div>
   );
