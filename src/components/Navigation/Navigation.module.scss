@@ -19,21 +19,21 @@ ol {
     animation: fadeIn 0.25s $base-bezier both;
 
     a {
-      color: $secondary;
+      color: $primary;
       transition: color 0.1s $base-bezier;
     }
 
     a:hover {
-      color: $primary;
+      color: $secondary;
       transition: color 0.1s $base-bezier;
     }
   }
 
   .linkButton {
     a {
-      color: $primary;
+      color: $accent;
       padding: 0.75rem 1.75rem;
-      border: 1px solid $primary;
+      border: 1px solid $accent;
       border-radius: 0.5rem;
     }
   }
