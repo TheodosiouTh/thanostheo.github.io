@@ -28,9 +28,8 @@ export default function Hero() {
         iou.
       </Typist>
       <p className={styles.introduction}>
-        I am a Software engineer based in Athens who specializes in
-        developing exceptional server-side Applications.
-        {' '}
+        I am a full stack engineer based in Athens who specializes in
+        developing exceptional Applications.
         <br />
         Currently, I am an engineer at
         <a href="https://thinkdesquared.com/"> Desquared </a>
