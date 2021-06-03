@@ -1,9 +1,10 @@
-import { render } from 'ejs';
 import React from 'react';
 
-export default function () {
+import styles from './AboutMe.module.scss';
+
+export default function AboutME() {
   return (
-    <article>
+    <section className={styles.container}>
       <h2>About Me</h2>
       <div>
         Main Text
@@ -54,6 +55,6 @@ export default function () {
           </ul>
         </div>
       </div>
-    </article>
+    </section>
   );
 }
