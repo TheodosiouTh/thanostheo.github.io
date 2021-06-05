@@ -8,8 +8,6 @@ import styles from './Navigation.module.scss';
 
 const links = {
   About: '#about',
-  Experience: '#',
-  Projects: '#',
 };
 
 export default function Sidemenu() {
@@ -42,12 +40,12 @@ export default function Sidemenu() {
                 </a>
               </li>
             ))}
-            <li
+            {/* <li
               className={styles.linkButton}
               style={{ animationDelay: `${150 * (Object.keys(links).length + 1)}ms` }}
             >
               <a href="/assets/images/me.jpg" download>Resume</a>
-            </li>
+            </li> */}
           </ol>
         </nav>
       </aside>
