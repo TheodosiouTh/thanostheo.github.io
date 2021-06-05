@@ -3,6 +3,16 @@
 .container {
   width: 960px;
   margin: 0 auto;
+
+  a {
+    color: $primary;
+    transition: color 0.125s $base-bezier;
+  }
+
+  a:hover {
+    color: $secondary;
+    transition: color 0.125s $base-bezier;
+  }
 }
 
 @media screen and (max-width: $large-screen) {
