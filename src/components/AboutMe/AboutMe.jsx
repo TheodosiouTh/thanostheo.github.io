@@ -4,7 +4,7 @@ import styles from './AboutMe.module.scss';
 
 export default function AboutME() {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="about">
       <h2>About Me</h2>
       <div className={styles.content}>
         <div>
