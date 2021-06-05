@@ -16,7 +16,7 @@ ol {
 
   li {
     opacity: 0;
-    animation: fadeIn 0.25s $base-bezier both;
+    animation: fadeInDown 0.25s $base-bezier both;
 
     a {
       color: $primary;
@@ -41,7 +41,7 @@ ol {
 
 .toggle {
   display: none;
-  z-index: 1;
+  z-index: 3;
 
   button svg {
     color: $primary;
@@ -73,6 +73,7 @@ ol {
     transition: right 0.125s $base-bezier;
 
     background-color: $surface;
+    z-index: 2;
 
     a {
       margin: 0;
@@ -101,7 +102,7 @@ ol {
   }
 }
 
-@keyframes fadeIn {
+@keyframes fadeInDown {
   from {
     opacity: 0;
     transform: translate3d(0, -50%, 0);

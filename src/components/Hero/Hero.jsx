@@ -8,7 +8,7 @@ export default function Hero() {
   const email = process.env.REACT_APP_EMAIL;
 
   return (
-    <section className={styles.container}>
+    <div className={styles.container}>
       <div className={styles.intro}>
         Hello, my name is
       </div>
@@ -39,6 +39,6 @@ export default function Hero() {
       <div className={styles.contact}>
         <a href={`mailto:${email}`}>Get in touch</a>
       </div>
-    </section>
+    </div>
   );
 }

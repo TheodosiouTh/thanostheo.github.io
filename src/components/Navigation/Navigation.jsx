@@ -6,7 +6,11 @@ import { IconButton } from '@material-ui/core';
 import { NavigationToggle } from '../Buttons/Buttons';
 import styles from './Navigation.module.scss';
 
-const links = ['About', 'Experience', 'Projects'];
+const links = {
+  About: '#about',
+  Experience: '#',
+  Projects: '#',
+};
 
 export default function Sidemenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,21 +30,21 @@ export default function Sidemenu() {
       <aside className={cn(styles.container, { [styles.openMenu]: isMenuOpen })}>
         <nav>
           <ol>
-            {links.map((link, index) => (
+            {Object.entries(links).map(([name, section], index) => (
               <li
                 style={{ animationDelay: `${150 * index}ms` }}
-                key={link}
+                key={name}
               >
                 <a
-                  href="/#"
+                  href={section}
                 >
-                  {link}
+                  {name}
                 </a>
               </li>
             ))}
             <li
               className={styles.linkButton}
-              style={{ animationDelay: `${150 * (links.length + 1)}ms` }}
+              style={{ animationDelay: `${150 * (Object.keys(links).length + 1)}ms` }}
             >
               <a href="/assets/images/me.jpg" download>Resume</a>
             </li>
