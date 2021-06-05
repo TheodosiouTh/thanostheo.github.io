@@ -1,5 +1,73 @@
 @import '../../global//shared.scss';
 
 .container {
-  color: white;
+  margin: 3rem 0;
+  color: $white;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+
+  img {
+    width: 100%;
+    margin: 1rem 1rem 0 2.5rem;
+    border-radius: 0.25rem;
+  }
+
+  .imageContainer {
+    display: inline-block;
+    position: relative;
+    width: 16rem;
+    height: 16rem;
+  }
+
+  .imageContainer::after {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 3rem;
+    left: 4rem;
+    transition: all 0.25s $base-bezier;
+
+    border: 0.25rem solid $primary;
+    border-radius: 0.25rem;
+
+    content: '';
+    z-index: -1;
+  }
+
+  .imageContainer:hover:after {
+    top: 2rem;
+    left: 3rem;
+    transition: all 0.25s $base-bezier;
+  }
+
+  p {
+    margin-top: 1rem;
+    width: 40rem;
+
+    ul {
+      margin: 0.5rem 0.25rem 0;
+      columns: 2;
+      -webkit-columns: 2;
+      -moz-columns: 2;
+
+      width: 25rem;
+      list-style: none;
+
+      li {
+        width: 15rem;
+      }
+      li::before {
+        content: '\2666';
+        color: $primary;
+        font-weight: bold;
+        display: inline-block;
+        width: 1rem;
+        margin-left: 0rem;
+      }
+    }
+  }
 }
