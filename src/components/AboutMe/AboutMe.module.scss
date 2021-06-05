@@ -1,8 +1,9 @@
 @import '../../global//shared.scss';
 
-.container {
-  margin: 6.25rem 0;
+section {
+  margin-bottom: 6.25rem;
   color: $white;
+  margin-top: 0;
 }
 
 .content {
@@ -82,7 +83,7 @@
 }
 
 @media screen and (max-width: $large-screen) {
-  .content {
+  section {
     flex-direction: column;
 
     .imageContainer {

@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import cn from 'classnames';
+
+import isVisibleToUser from '../../common/isVisibleToUser';
 
 import styles from './AboutMe.module.scss';
 
-export default function AboutME() {
+export default function AboutMe() {
+  const ref = useRef();
+  const isVisible = isVisibleToUser(ref);
+
   return (
-    <section className={styles.container} id="about">
+    <section className={cn({ show: isVisible })} id="about" ref={ref}>
       <h2>About Me</h2>
       <div className={styles.content}>
         <div>

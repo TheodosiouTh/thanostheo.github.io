@@ -13,11 +13,6 @@
     color: $secondary;
     transition: color 0.125s $base-bezier;
   }
-  section {
-    h2 {
-      font-size: 2rem;
-    }
-  }
 }
 
 @media screen and (max-width: $large-screen) {
