@@ -1,0 +1,32 @@
+@import '../../global/shared.scss';
+
+.container {
+  margin: 1.5rem 3.125rem;
+  width: 90%;
+  position: fixed;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: $primary;
+
+  .logo {
+    color: $primary;
+    width: 3rem;
+    margin-top: 0.25rem;
+    margin-left: 1.25rem;
+  }
+
+  .rightSide {
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: $small-screen) {
+  .container {
+    margin: 1rem 1.25rem;
+
+    .logo {
+      margin-left: 0.25rem;
+    }
+  }
+}
