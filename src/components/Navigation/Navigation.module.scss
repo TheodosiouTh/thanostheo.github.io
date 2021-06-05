@@ -16,7 +16,7 @@ ol {
 
   li {
     opacity: 0;
-    animation: fadeIn 0.25s $base-bezier both;
+    animation: fadeInDown 0.25s $base-bezier both;
 
     a {
       color: $primary;
@@ -102,7 +102,7 @@ ol {
   }
 }
 
-@keyframes fadeIn {
+@keyframes fadeInDown {
   from {
     opacity: 0;
     transform: translate3d(0, -50%, 0);
