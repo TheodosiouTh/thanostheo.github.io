@@ -11,36 +11,45 @@
 
   img {
     width: 100%;
-    margin: 1rem 1rem 0 2.5rem;
     border-radius: 0.25rem;
+    position: relative;
   }
 
   .imageContainer {
+    margin: 1rem 1rem 0 2.5rem;
+  }
+
+  .imageWrapper {
     display: inline-block;
     position: relative;
     width: 16rem;
     height: 16rem;
+
+    img {
+      position: relative;
+      z-index: -1;
+    }
   }
 
-  .imageContainer::after {
+  .imageWrapper::after {
     width: 100%;
     height: 100%;
 
     position: absolute;
-    top: 3rem;
-    left: 4rem;
+    top: 1rem;
+    left: 1rem;
     transition: all 0.25s $base-bezier;
 
     border: 0.25rem solid $primary;
     border-radius: 0.25rem;
 
     content: '';
-    z-index: -1;
+    z-index: -2;
   }
 
-  .imageContainer:hover:after {
-    top: 2rem;
-    left: 3rem;
+  .imageWrapper:hover:after {
+    top: 0.5rem;
+    left: 0.5rem;
     transition: all 0.25s $base-bezier;
   }
 
@@ -68,6 +77,39 @@
         width: 1rem;
         margin-left: 0rem;
       }
+    }
+  }
+}
+
+@media screen and (max-width: $large-screen) {
+  .content {
+    flex-direction: column;
+
+    .imageContainer {
+      display: flex;
+      justify-content: center;
+      margin: 1rem 0 0;
+    }
+
+    p {
+      margin-top: 1rem !important;
+      width: 100%;
+      margin: auto;
+      text-align: justify;
+    }
+
+    ul {
+      width: 100% !important;
+    }
+
+    .imageWrapper {
+      margin-top: 1.5rem;
+    }
+  }
+  @media screen and (max-width: $small-screen) {
+    .imageWrapper {
+      width: 13rem !important;
+      height: 13rem !important;
     }
   }
 }
