@@ -56,8 +56,8 @@ export default function AboutME() {
             </ul>
           </p>
         </div>
-        <div>
-          <div className={styles.imageContainer}>
+        <div className={styles.imageContainer}>
+          <div className={styles.imageWrapper}>
             <img src="assets/images/me.jpg" alt="Thanos Theodosiou" />
           </div>
         </div>
