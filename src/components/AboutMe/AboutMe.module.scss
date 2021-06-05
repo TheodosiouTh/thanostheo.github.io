@@ -76,7 +76,7 @@ section {
         font-weight: bold;
         display: inline-block;
         width: 1rem;
-        margin-left: 0rem;
+        margin-left: 0;
       }
     }
   }
@@ -95,7 +95,6 @@ section {
     p {
       margin-top: 1rem !important;
       width: 100%;
-      margin: auto;
       text-align: justify;
     }
 
