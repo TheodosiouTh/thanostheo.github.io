@@ -83,7 +83,7 @@ section {
 }
 
 @media screen and (max-width: $large-screen) {
-  section {
+  .content {
     flex-direction: column;
 
     .imageContainer {
