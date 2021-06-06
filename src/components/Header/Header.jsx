@@ -11,7 +11,6 @@ import styles from './Header.module.scss';
 export default function Sidemenu() {
   const [shouldHide, setShouldHide] = useState(window.pageYOffset > 250);
   function handleScroll() {
-    console.log(window.pageYOffset);
     setShouldHide(window.pageYOffset > 250);
   }
 
