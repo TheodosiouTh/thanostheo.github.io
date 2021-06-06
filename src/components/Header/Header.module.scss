@@ -1,8 +1,8 @@
 @import '../../global/shared.scss';
 
 header {
-  margin: 1.5rem 3.125rem;
-  width: 90%;
+  padding: 1.25rem 3.125rem;
+  width: 100%;
   position: fixed;
   z-index: 4;
 
@@ -24,7 +24,7 @@ header {
 }
 @media screen and (max-width: $small-screen) {
   header {
-    margin: 1rem 1.25rem;
+    padding: 0.5rem 1rem;
 
     .logo {
       margin-left: 0.25rem;
