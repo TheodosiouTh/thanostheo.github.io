@@ -1,7 +1,8 @@
-import React from 'react';
-import Particles from 'react-particles-js';
+import React, { lazy } from 'react';
 
 import styles from './ParticleBackground.module.scss';
+
+const Particles = lazy(() => import('react-particles-js'));
 
 export default function ParticleBackground() {
   return (

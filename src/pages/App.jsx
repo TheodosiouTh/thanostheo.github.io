@@ -1,11 +1,11 @@
 import React, { lazy, Suspense } from 'react';
 import styles from './App.module.scss';
-import ParticleBackground from '../components/ParticleBackground/ParticleBackground';
 
 import Loader from '../components/Loader/Loader';
 
 const Header = lazy(() => import('../components/Header/Header'));
 const Main = lazy(() => import('./Main/Main'));
+const ParticleBackground = lazy(() => import('../components/ParticleBackground/ParticleBackground'));
 
 function App() {
   return (
