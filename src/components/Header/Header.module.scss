@@ -30,4 +30,19 @@ header {
       margin-left: 0.25rem;
     }
   }
+  .hidden {
+    animation: SlideUp 0.5s $base-bezier;
+    opacity: 0;
+  }
+}
+
+@keyframes SlideUp {
+  from {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  to {
+    transform: translate(0, -100%);
+    opacity: 0;
+  }
 }
