@@ -9,9 +9,7 @@ import styles from './Header.module.scss';
 
 export default function Sidemenu() {
   return (
-    <header
-      className={styles.container}
-    >
+    <header>
       <div className={styles.leftSide}>
         <Logo className={styles.logo} />
       </div>

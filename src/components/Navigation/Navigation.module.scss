@@ -1,9 +1,5 @@
 @import '../../global/shared.scss';
 
-header {
-  z-index: 2;
-}
-
 .container {
   font-weight: 500;
   a {
@@ -45,7 +41,6 @@ ol {
 
 .toggle {
   display: none;
-  z-index: 3;
   button svg {
     color: $primary;
     font-size: 2rem;
@@ -55,9 +50,6 @@ ol {
 @media screen and (max-width: $xsmall-screen) {
   .toggle {
     display: block;
-    position: fixed;
-    right: 0.25rem;
-    top: 0;
   }
 
   .container {
@@ -70,6 +62,7 @@ ol {
     width: 15rem;
     right: -18rem;
 
+    z-index: -1 !important;
     position: fixed;
     top: 0;
     transition: right 0.125s $base-bezier;

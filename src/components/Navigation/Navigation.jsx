@@ -14,7 +14,7 @@ export default function Sidemenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header>
+    <>
       <div className={styles.toggle}>
         <IconButton
           onClick={() => {
@@ -49,6 +49,6 @@ export default function Sidemenu() {
           </ol>
         </nav>
       </aside>
-    </header>
+    </>
   );
 }
