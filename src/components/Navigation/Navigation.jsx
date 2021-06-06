@@ -1,10 +1,16 @@
-import React, { useState } from 'react';
+import React, { lazy, useState, Suspense } from 'react';
 import cn from 'classnames';
 
 /* SUB-COMPONENTS */
 import { IconButton } from '@material-ui/core';
-import { NavigationToggle } from '../Buttons/Buttons';
 import styles from './Navigation.module.scss';
+
+import Loader from '../Loader/Loader';
+
+const NavigationToggle = lazy(async () => {
+  const module = await import('../Buttons/Buttons');
+  return { default: module.NavigationToggle };
+});
 
 const links = {
   About: '#about',
@@ -14,7 +20,7 @@ export default function Sidemenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <>
+    <Suspense fallback={<Loader />}>
       <div className={styles.toggle}>
         <IconButton
           onClick={() => {
@@ -49,6 +55,6 @@ export default function Sidemenu() {
           </ol>
         </nav>
       </aside>
-    </>
+    </Suspense>
   );
 }

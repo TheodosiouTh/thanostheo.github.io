@@ -1,16 +1,21 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
+
+import Loader from '../../components/Loader/Loader';
 
 import styles from './Main.module.scss';
 
 /* COMPONETS */
-import Hero from '../../components/Hero/Hero';
-import AboutMe from '../../components/AboutMe/AboutMe';
+const Hero = lazy(() => import('../../components/Hero/Hero'));
+const AboutMe = lazy(() => import('../../components/AboutMe/AboutMe'));
 
 export default function Index() {
   return (
-    <div className={styles.container}>
-      <Hero />
-      <AboutMe />
-    </div>
+    <Suspense fallback={<Loader />}>
+      <div className={styles.container}>
+        <Loader />
+        <Hero />
+        <AboutMe />
+      </div>
+    </Suspense>
   );
 }
