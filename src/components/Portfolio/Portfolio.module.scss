@@ -18,9 +18,16 @@
 }
 
 @media screen and (max-width: $large-screen) {
+  .container {
+    margin-top: 3rem;
+  }
   .content {
     flex-direction: column;
-  }
-  @media screen and (max-width: $small-screen) {
+    .gitHubStats {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
   }
 }
