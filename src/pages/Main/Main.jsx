@@ -7,6 +7,7 @@ import styles from './Main.module.scss';
 /* COMPONETS */
 const Hero = lazy(() => import('../../components/Hero/Hero'));
 const AboutMe = lazy(() => import('../../components/AboutMe/AboutMe'));
+const Portfolio = lazy(() => import('../../components/Portfolio/Portfolio'));
 
 export default function Index() {
   return (
@@ -15,6 +16,7 @@ export default function Index() {
         <Loader />
         <Hero />
         <AboutMe />
+        <Portfolio />
       </div>
     </Suspense>
   );
