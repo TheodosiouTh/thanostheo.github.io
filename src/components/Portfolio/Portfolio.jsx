@@ -13,12 +13,13 @@ export default function Portfolio() {
     <section className={cn({ show: isVisible })} id="portfolio" ref={ref}>
       <h2>Portfolio</h2>
       <div className={styles.content}>
-        Ever since I found out about version controll sytems, especially{' '}
-        <span className="special">git</span>, I have been using it on every one
-        of my projects in order to keep track of changes, experiment with new
-        things without worrying about breaking something and not having a solid
-        backup to roll-back to and most importantly see how my code & problem
-        solving skills progressed over time. <br />
+        Ever since I found out about version control systems, especially{' '}
+        <span className="special">git</span>
+        , I have been using it on every one of my projects to keep track of
+        changes, experiment with new things without worrying about breaking
+        something, and not having a solid backup to roll back to and most
+        importantly see how my code & problem-solving skills progressed over
+        time. <br />
         So, the best way to find past and current projects and see my coding
         journey so far is through my
         <a
@@ -26,7 +27,7 @@ export default function Portfolio() {
           target="_blank"
           rel="noreferrer"
         >
-          Github Profile
+          GitHub Profile
         </a>
         . Also here are my github stats:
         <div className={styles.stats}>
