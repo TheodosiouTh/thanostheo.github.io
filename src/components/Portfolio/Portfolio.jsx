@@ -25,7 +25,7 @@ export default function Portfolio() {
         importantly see how my code & problem-solving skills progressed over
         time. <br />
         So, the best way to find past and current projects and see my coding
-        journey so far is through my
+        journey so far is through my{' '}
         <a
           href="https://github.com/TheodosiouTh"
           target="_blank"
