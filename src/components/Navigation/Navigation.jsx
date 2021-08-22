@@ -32,19 +32,14 @@ export default function Sidemenu() {
           <NavigationToggle isOpen={isMenuOpen} />
         </IconButton>
       </div>
-      <aside className={cn(styles.container, { [styles.openMenu]: isMenuOpen })}>
+      <aside
+        className={cn(styles.container, { [styles.openMenu]: isMenuOpen })}
+      >
         <nav>
           <ol>
             {Object.entries(links).map(([name, section], index) => (
-              <li
-                style={{ animationDelay: `${150 * index}ms` }}
-                key={name}
-              >
-                <a
-                  href={section}
-                >
-                  {name}
-                </a>
+              <li style={{ animationDelay: `${150 * index}ms` }} key={name}>
+                <a href={section}>{name}</a>
               </li>
             ))}
             {/* <li
