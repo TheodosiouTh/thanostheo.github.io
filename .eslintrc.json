@@ -12,6 +12,7 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
+  "ignorePatterns": ["**/resources/css", "**/resources/js"],
   "plugins": ["react", "react-hooks"],
   "rules": {
     "arrow-parens": ["error", "as-needed"],
