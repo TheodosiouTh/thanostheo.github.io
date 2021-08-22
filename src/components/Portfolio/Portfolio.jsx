@@ -29,7 +29,7 @@ export default function Portfolio() {
         >
           GitHub Profile
         </a>
-        . Also here are my github stats:
+        . Also here are my GitHub stats:
         <div className={styles.stats}>
           <div className={styles.badgeContainer}>
             <a
