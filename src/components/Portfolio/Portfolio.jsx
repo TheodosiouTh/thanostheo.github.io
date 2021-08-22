@@ -10,7 +10,11 @@ export default function Portfolio() {
   const isVisible = isVisibleToUser(ref);
 
   return (
-    <section className={cn({ show: isVisible })} id="portfolio" ref={ref}>
+    <section
+      className={cn(styles.container, { show: isVisible })}
+      id="portfolio"
+      ref={ref}
+    >
       <h2>Portfolio</h2>
       <div className={styles.content}>
         Ever since I found out about version control systems, especially{' '}
@@ -57,6 +61,7 @@ export default function Portfolio() {
             href="https://github.com/TheodosiouTh"
             target="_blank"
             rel="noreferrer"
+            className={styles.gitHubStats}
           >
             <img
               src="https://github-readme-stats.vercel.app/api?username=theodosiouth&count_private=true&show_icons=true&theme=tokyonight"
