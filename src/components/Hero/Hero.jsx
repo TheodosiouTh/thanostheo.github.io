@@ -34,7 +34,7 @@ export default function Hero() {
         Currently, I am an engineer at
         <a href="https://thinkdesquared.com/"> Desquared </a>
         focused on making online shopping more accessible to consumers and easier
-        to manage for managers.
+        to manage.
       </p>
       <div className={styles.contact}>
         <a href={`mailto:${email}`}>Get in touch</a>
