@@ -3,17 +3,10 @@
 .content {
   margin-top: 1rem;
   .stats {
-    margin-top: 0.875rem;
+    margin-top: 1.25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    .badgeContainer {
-      margin-bottom: 0.87rem;
-      img {
-        margin-left: 1rem;
-      }
-    }
   }
 }
 

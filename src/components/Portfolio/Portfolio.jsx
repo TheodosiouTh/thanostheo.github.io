@@ -35,28 +35,6 @@ export default function Portfolio() {
         </a>
         . Also here are my GitHub stats:
         <div className={styles.stats}>
-          <div className={styles.badgeContainer}>
-            <a
-              href="https://github.com/TheodosiouTh"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src="https://visitor-badge.laobi.icu/badge?page_id=theodosiouth"
-                alt="github-visitors"
-              />
-            </a>
-            <a
-              href="https://github.com/TheodosiouTh"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src="https://img.shields.io/github/followers/theodosiouth?label=Followers&logo=Github"
-                alt="github-followers"
-              />
-            </a>
-          </div>
           <a
             href="https://github.com/TheodosiouTh"
             target="_blank"
@@ -64,7 +42,7 @@ export default function Portfolio() {
             className={styles.gitHubStats}
           >
             <img
-              src="https://github-readme-stats.vercel.app/api?username=theodosiouth&count_private=true&show_icons=true&theme=great-gatsby"
+              src="https://github-readme-stats.vercel.app/api?username=theodosiouth&count_private=true&show_icons=true&title_color=d64e00&icon_color=d64e00&border_color=d64e00&bg_color=0e0706&text_color=fff"
               alt="github-stats"
             />
           </a>
