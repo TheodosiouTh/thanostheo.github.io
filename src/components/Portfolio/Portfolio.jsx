@@ -64,7 +64,7 @@ export default function Portfolio() {
             className={styles.gitHubStats}
           >
             <img
-              src="https://github-readme-stats.vercel.app/api?username=theodosiouth&count_private=true&show_icons=true&theme=great-gatsby"
+              src="https://github-readme-stats.vercel.app/api?username=theodosiouth&count_private=true&show_icons=true&title_color=d64e00&icon_color=d64e00&border_color=d64e00&bg_color=0e0706&text_color=fff"
               alt="github-stats"
             />
           </a>
