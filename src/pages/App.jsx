@@ -5,7 +5,10 @@ import Loader from '../components/Loader/Loader';
 
 const Header = lazy(() => import('../components/Header/Header'));
 const Main = lazy(() => import('./Main/Main'));
-const ParticleBackground = lazy(() => import('../components/ParticleBackground/ParticleBackground'));
+
+const ParticleBackground = lazy(() =>
+  import('../components/ParticleBackground/ParticleBackground'),
+);
 
 function App() {
   return (
