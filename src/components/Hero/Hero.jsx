@@ -26,13 +26,11 @@ export default function Hero() {
         iou.
       </Typist>
       <p className={styles.introduction}>
-        I am a full stack engineer based in Athens who specializes in
-        developing exceptional Applications.
-        <br />
-        Currently, I am an engineer at
+        I am a server-side engineer based in Athens with a knack for solving
+        difficult problems. Currently, I am an engineer at
         <a href="https://thinkdesquared.com/"> Desquared </a>
-        focused on making online shopping more accessible to consumers and easier
-        to manage.
+        focused on making online shopping more accessible to consumers and
+        easier to manage.
       </p>
       <div className={styles.contact}>
         <a href={`mailto:${email}`}>Get in touch</a>
