@@ -1,8 +1,8 @@
-@import '../../global/shared.scss';
+@use 'shared' as sharedStyles;
 
 .tag {
-  background-color: $surface;
-  color: $secondary;
+  background-color: sharedStyles.$surface;
+  color: sharedStyles.$secondary;
 
   margin-right: 0.5rem;
   border-radius: 5rem;
@@ -12,7 +12,7 @@
 }
 
 .tag:hover {
-  background-color: $lighten-background;
+  background-color: sharedStyles.$lighten-background;
 }
 
 .title {
@@ -52,7 +52,7 @@
   }
 }
 
-@media screen and (max-width: $medium-screen) {
+@media screen and (max-width: sharedStyles.$medium-screen) {
   .textContainer {
     * {
       justify-content: center;

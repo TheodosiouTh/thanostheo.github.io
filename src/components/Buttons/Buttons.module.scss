@@ -1,4 +1,4 @@
-@import '../../global/shared.scss';
+@use 'shared' as sharedStyles;
 
 .NavigationToggle {
   position: relative;
@@ -14,7 +14,7 @@
 .NavigationToggleBurger {
   width: 2rem;
   height: 0.25rem;
-  background: $primary;
+  background: sharedStyles.$primary;
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
 }
@@ -26,7 +26,7 @@
   width: 2rem;
   height: 0.25rem;
   margin-left: calc(-50%);
-  background: $primary;
+  background: sharedStyles.$primary;
   border-radius: 0.3125rem;
   transition: all 0.5s ease-in-out;
 }

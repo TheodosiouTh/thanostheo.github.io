@@ -1,8 +1,8 @@
-@import '../../global/shared.scss';
+@use 'shared' as sharedStyles;
 
 .container {
   height: calc(100vh - 5.5rem);
-  color: $white;
+  color: sharedStyles.$white;
   font-weight: 400;
 
   display: flex;
@@ -18,13 +18,13 @@ a {
 
 .intro {
   font-size: 2rem;
-  color: $gray;
+  color: sharedStyles.$gray;
 }
 
 .name {
   font-weight: 600;
   font-size: 4rem;
-  color: $light-gray;
+  color: sharedStyles.$light-gray;
 }
 
 .introduction {
@@ -33,28 +33,28 @@ a {
   margin-top: 0.5rem;
   font-family: 'Lato';
   word-spacing: 0.125rem;
-  color: $gray;
+  color: sharedStyles.$gray;
 }
 
 .contact {
   margin-top: 3rem;
   font-size: 1.25rem;
   a {
-    border: 1px solid $accent;
+    border: 1px solid sharedStyles.$accent;
     border-radius: 0.25rem;
     padding: 1rem 2rem;
-    color: $accent;
-    transition: background-color 0.2s $base-bezier;
+    color: sharedStyles.$accent;
+    transition: background-color 0.2s sharedStyles.$base-bezier;
   }
 
   a:hover {
-    background-color: $lighten-background;
-    color: $accent;
-    transition: background-color 0.2s $base-bezier;
+    background-color: sharedStyles.$lighten-background;
+    color: sharedStyles.$accent;
+    transition: background-color 0.2s sharedStyles.$base-bezier;
   }
 }
 
-@media screen and (max-width: $small-screen) {
+@media screen and (max-width: sharedStyles.$small-screen) {
   .container {
     padding-left: 0.75rem;
     height: 100vh;
@@ -81,7 +81,7 @@ a {
   }
 }
 
-@media screen and (max-width: $xsmall-screen) {
+@media screen and (max-width: sharedStyles.$xsmall-screen) {
   .name {
     font-weight: 600;
     font-size: 3.25rem;

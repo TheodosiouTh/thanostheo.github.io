@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import cn from 'classnames';
 
-import { ReactComponent as Logo } from '../../global/Logo.svg';
+import { ReactComponent as Logo } from '../../common/Logo.svg';
 
 /* SUB-COMPONENTS */
 import Navigation from '../Navigation/Navigation';
