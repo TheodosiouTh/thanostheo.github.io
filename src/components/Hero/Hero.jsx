@@ -9,9 +9,7 @@ export default function Hero() {
 
   return (
     <div className={styles.container}>
-      <div className={styles.intro}>
-        Hello, my name is
-      </div>
+      <div className={styles.intro}>Hello, my name is</div>
       <Typist
         className={styles.name}
         delay={1500}
