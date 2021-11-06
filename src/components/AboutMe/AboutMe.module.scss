@@ -17,8 +17,8 @@
   .imageWrapper {
     display: inline-block;
     position: relative;
-    width: 16rem;
-    height: 16rem;
+    width: 14rem;
+    height: 14rem;
 
     img {
       position: relative;
@@ -48,9 +48,11 @@
     transition: all 0.25s $base-bezier;
   }
 
-  p {
-    margin-top: 1rem;
-    width: 40rem;
+  .text {
+    p {
+      margin-top: 0.75rem;
+    }
+    max-width: 40rem;
 
     ul {
       margin: 0.5rem 0.25rem 0;
@@ -76,7 +78,7 @@
   }
 }
 
-@media screen and (max-width: $large-screen) {
+@media screen and (max-width: $medium-screen) {
   .content {
     flex-direction: column;
 
@@ -100,10 +102,11 @@
       margin-top: 1.5rem;
     }
   }
-  @media screen and (max-width: $small-screen) {
-    .imageWrapper {
-      width: 13rem !important;
-      height: 13rem !important;
-    }
+}
+
+@media screen and (max-width: $small-screen) {
+  .imageWrapper {
+    width: 13rem !important;
+    height: 13rem !important;
   }
 }
