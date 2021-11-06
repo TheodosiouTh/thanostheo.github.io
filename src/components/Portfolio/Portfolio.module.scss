@@ -3,10 +3,12 @@
 .content {
   margin-top: 1rem;
   .stats {
-    margin-top: 1.25rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 1.25rem auto;
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 60%;
+    }
   }
 }
 
@@ -15,11 +17,9 @@
     margin-top: 3rem;
   }
   .content {
-    flex-direction: column;
-    .gitHubStats {
-      width: 100%;
+    .stats {
       img {
-        width: 100%;
+        max-width: 100%;
       }
     }
   }
