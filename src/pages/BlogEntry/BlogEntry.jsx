@@ -1,22 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
-import { useLocation, useHistory } from 'react-router-dom';
+import { useHistory, useParams } from 'react-router-dom';
 
 import styles from './BlogEntry.module.scss';
 
 import SyntaxHighlighter from '../../components/CodeHighlighter/CodeHighlighter';
 import { readFile } from '../../common/utils';
 
-const SLUG_LOCATION = 1;
 export default function BlogEntry() {
   const [text, setText] = useState('');
   const [title, setTitle] = useState('');
   const [tags, setTags] = useState(null);
   const [hasHeaderImage, setHasHeaderImage] = useState(false);
 
-  const location = useLocation();
   const history = useHistory();
-  const slug = location.pathname.split('blogs/')[SLUG_LOCATION];
+  const { slug } = useParams();
 
   useEffect(() => {
     readFile(
