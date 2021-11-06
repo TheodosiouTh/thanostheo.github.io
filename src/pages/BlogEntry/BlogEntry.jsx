@@ -4,25 +4,37 @@ import ReactMarkdown from 'react-markdown';
 import styles from './BlogEntry.module.scss';
 
 import SyntaxHighlighter from '../../components/CodeHighlighter/CodeHighlighter';
+import { readFile } from '../../common/utils';
 
 export default function BlogEntry() {
-  const [blogEntry, setBlogEntry] = useState('');
+  const [text, setText] = useState('');
+  const [title, setTitle] = useState('');
+  const [tags, setTags] = useState(null);
 
-  const entry = 'building-a-blog';
-  const title = 'Building a blog from scratch!';
-  const tags = ['react', 'javascript', 'happiness'];
+  const slug = 'building-a-blog';
 
   useEffect(() => {
-    fetch(`/blog-entries/${entry}/text.md`)
-      .then(data => data.text())
-      .then(text => setBlogEntry(text));
-  });
+    readFile(
+      '/blog-entries/index.json',
+      {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+      data => {
+        const entries = JSON.parse(data);
+        const entry = entries[slug];
+        setTitle(entry.title);
+        setTags(entry.tags);
+      },
+    );
+    readFile(`/blog-entries/${slug}/text.md`, undefined, setText);
+  }, []);
 
   return (
     <div className={styles.container}>
       {tags &&
         tags.map(tag => (
-          <a href={`/blogs?tag=${tag}`} className={styles.tag}>
+          <a href={`/blogs?tag=${tag}`} className={styles.tag} key={tag}>
             {tag}
           </a>
         ))}
@@ -40,7 +52,7 @@ export default function BlogEntry() {
           code: SyntaxHighlighter,
         }}
       >
-        {blogEntry}
+        {text}
       </ReactMarkdown>
     </div>
   );
