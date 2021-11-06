@@ -16,6 +16,7 @@ export default function Index() {
       <div className={styles.container}>
         <Router>
           <Switch>
+            <Route path="/blogs" component={BlogList} />
             <Route path="/blogs/:slug" component={BlogEntry} />
             <Route path="/">
               <Homepage />
