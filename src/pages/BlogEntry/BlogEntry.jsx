@@ -27,6 +27,13 @@ export default function BlogEntry() {
           </a>
         ))}
       <h1 className={styles.title}>{title}</h1>
+
+      <img
+        className={styles.headerImage}
+        src={`/blog-entries/${slug}/image.jpg`}
+        alt={title}
+      />
+
       <ReactMarkdown
         className={styles.textContainer}
         components={{
