@@ -13,7 +13,7 @@ export default function AboutMe() {
     <section className={cn({ show: isVisible })} id="about" ref={ref}>
       <h2>About Me</h2>
       <div className={styles.content}>
-        <div>
+        <div className={styles.text}>
           <p>
             Hello! My name is Thanos and I enjoy solving complex problems with
             efficient, maintainable, and scalable code. My interest in software
