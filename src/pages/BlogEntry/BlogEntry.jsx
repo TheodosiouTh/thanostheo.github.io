@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { useHistory, useParams } from 'react-router-dom';
 
+import moment from 'moment';
 import styles from './BlogEntry.module.scss';
 
 import SyntaxHighlighter from '../../components/CodeHighlighter/CodeHighlighter';
@@ -10,6 +11,7 @@ import { readFile } from '../../common/utils';
 export default function BlogEntry() {
   const [text, setText] = useState('');
   const [title, setTitle] = useState('');
+  const [date, setDate] = useState(null);
   const [tags, setTags] = useState(null);
   const [hasHeaderImage, setHasHeaderImage] = useState(false);
 
@@ -33,6 +35,7 @@ export default function BlogEntry() {
         }
 
         setTitle(entry.title);
+        setDate(entry.date);
         setTags(entry.tags);
         setHasHeaderImage(entry.hasHeaderImage);
       },
@@ -42,12 +45,19 @@ export default function BlogEntry() {
 
   return (
     <div className={styles.container}>
-      {tags &&
-        tags.map(tag => (
-          <a href={`/blogs?tag=${tag}`} className={styles.tag} key={tag}>
-            {tag}
-          </a>
-        ))}
+      <div className={styles.blogInfo}>
+        <div>
+          {tags &&
+            tags.map(tag => (
+              <a href={`/blogs?tag=${tag}`} className={styles.tag} key={tag}>
+                {tag}
+              </a>
+            ))}
+        </div>
+        <div className={styles.blogDate}>
+          {moment(date).format('Do MMM YYYY')}
+        </div>
+      </div>
       <h1 className={styles.title}>{title}</h1>
 
       {hasHeaderImage && (

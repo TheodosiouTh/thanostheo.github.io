@@ -1,5 +1,11 @@
 @use 'shared' as sharedStyles;
 
+.blogInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .tag {
   background-color: sharedStyles.$surface;
   color: sharedStyles.$secondary;
