@@ -19,13 +19,19 @@ function App() {
       <div className={styles.App}>
         <Router>
           <Header />
-          <Switch>
-            <div className={styles.container}>
-              <Route path="/blogs" component={BlogList} />
-              <Route path="/blogs/:slug" component={BlogEntry} />
-              <Route path="/" component={Main} />
-            </div>
-          </Switch>
+          <div className={styles.container}>
+            <Switch>
+              <Route path="/blogs">
+                <BlogList />
+              </Route>
+              <Route path="/blogs/:slug">
+                <BlogEntry />
+              </Route>
+              <Route path="/">
+                <Main />
+              </Route>
+            </Switch>
+          </div>
         </Router>
         <ParticleBackground />
       </div>
