@@ -58,6 +58,13 @@ section {
   animation: fadeInUp 0.5s $base-bezier both;
 }
 
+@media screen and (max-width: $small-screen) {
+  body {
+    font-size: 1.125rem;
+    word-spacing: 0.125rem;
+  }
+}
+
 @media screen and (max-width: $xsmall-screen) {
   section {
     padding: 0 0.75rem;
