@@ -27,6 +27,12 @@ export default function BlogEntry() {
       data => {
         const entries = JSON.parse(data);
         const entry = entries[slug];
+
+        if (!entry) {
+          history.push('/blogs');
+          return;
+        }
+
         setTitle(entry.title);
         setTags(entry.tags);
       },
