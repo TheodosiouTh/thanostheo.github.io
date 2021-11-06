@@ -1,8 +1,8 @@
 @import '../../global/shared.scss';
 
 .container {
-  height: 100vh;
-  color: white;
+  height: calc(100vh - 5.5rem);
+  color: $white;
   font-weight: 400;
 
   display: flex;
