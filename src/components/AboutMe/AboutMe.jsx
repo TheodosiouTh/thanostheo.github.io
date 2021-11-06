@@ -24,37 +24,27 @@ export default function AboutMe() {
               rel="noreferrer"
             >
               {' '}
-              this book
-              {' '}
+              this book{' '}
             </a>
             in order to learn how to program computer applications. After I
             finished reading the book I knew that I wanted to be a software
-            engineer, so a few years later after a lot of studying, I got my
-            {' '}
+            engineer, so a few years later after a lot of studying, I got my{' '}
             <strong>B.Sc. Computer Science </strong>
-            at the
-            {' '}
+            at the{' '}
             <a href="https://www.cs.unipi.gr/index.php?lang=en">
               University of Piraeus
             </a>
             .
           </p>
           <p>
-            Fast-forward to today, and I
-            <span>&#39;</span>
+            Fast-forward to today, and I<span>&#39;</span>
             ve had the privilege of working at one of the biggest software UX &
-            Software Development Agencies in Greece at products such as
-            {' '}
-            <a href="https://kritikos-sm.gr/">Kritikos-SM</a>
-            {' '}
-            and
-            {' '}
-            <a href="https://box.gr/">BOX</a>
-            .
+            Software Development Agencies in Greece at products such as{' '}
+            <a href="https://kritikos-sm.gr/">Kritikos-SM</a> and{' '}
+            <a href="https://box.gr/">BOX</a>.
           </p>
           <p>
-            Here are a few technologies I
-            <span>&#39;</span>
+            Here are a few technologies I<span>&#39;</span>
             ve been working with:
             <ul>
               <li>Javascript (ES6)</li>
