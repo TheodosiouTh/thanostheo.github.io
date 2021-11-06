@@ -15,6 +15,7 @@ const NavigationToggle = lazy(async () => {
 const links = {
   About: '#about',
   Portfolio: '#portfolio',
+  Blog: '/blog',
 };
 
 export default function Sidemenu() {
