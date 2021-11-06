@@ -12,6 +12,7 @@ export default function BlogEntry() {
   const [text, setText] = useState('');
   const [title, setTitle] = useState('');
   const [tags, setTags] = useState(null);
+  const [hasHeaderImage, setHasHeaderImage] = useState(false);
 
   const location = useLocation();
   const history = useHistory();
@@ -35,6 +36,7 @@ export default function BlogEntry() {
 
         setTitle(entry.title);
         setTags(entry.tags);
+        setHasHeaderImage(entry.hasHeaderImage);
       },
     );
     readFile(`/blog-entries/${slug}/text.md`, undefined, setText);
@@ -50,11 +52,13 @@ export default function BlogEntry() {
         ))}
       <h1 className={styles.title}>{title}</h1>
 
-      <img
-        className={styles.headerImage}
-        src={`/blog-entries/${slug}/image.jpg`}
-        alt={title}
-      />
+      {hasHeaderImage && (
+        <img
+          className={styles.headerImage}
+          src={`/blog-entries/${slug}/image.jpg`}
+          alt={title}
+        />
+      )}
 
       <ReactMarkdown
         className={styles.textContainer}
