@@ -3,13 +3,12 @@ import ReactMarkdown from 'react-markdown';
 import { useHistory, useParams } from 'react-router-dom';
 import cn from 'classnames';
 
-import moment from 'moment';
 import styles from './BlogEntry.module.scss';
 
 import SyntaxHighlighter from '../../components/CodeHighlighter/CodeHighlighter';
 import Tags from '../../components/Blog/Tags/Tags';
 
-import { readFile } from '../../common/utils';
+import { getFormatedDate, readFile } from '../../common/utils';
 
 export default function BlogEntry() {
   const [text, setText] = useState('');
@@ -50,9 +49,7 @@ export default function BlogEntry() {
     <div className={cn(styles.container, 'fadeInDown')}>
       <div className={styles.blogInfo}>
         <Tags tags={tags} />
-        <div className={styles.blogDate}>
-          {moment(date).format('Do MMM YYYY')}
-        </div>
+        <div className={styles.blogDate}>{getFormatedDate(date)}</div>
       </div>
       <h1 className={styles.title}>{title}</h1>
 

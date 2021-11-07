@@ -5,6 +5,7 @@ import cn from 'classnames';
 import Tags from '../Tags/Tags';
 
 import styles from './Card.module.scss';
+import { getFormatedDate } from '../../../common/utils';
 
 export default function Card({ slug, entry, index }) {
   return (
@@ -16,7 +17,7 @@ export default function Card({ slug, entry, index }) {
         <div>
           <Tags tags={entry.tags} />
         </div>
-        <div>{entry.date}</div>
+        <div className={styles.blogDate}>{getFormatedDate(entry.date)}</div>
       </div>
       <Link to={`/blogs/${slug}`} className={styles.title}>
         {entry.title}
