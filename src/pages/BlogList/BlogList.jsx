@@ -52,8 +52,8 @@ export default function BlogList() {
     <div>
       <h1 className={styles.pageTitle}>{selectedTag || 'Articles'}</h1>
       {filteredIndex &&
-        Object.entries(filteredIndex).map(([slug, entry]) => (
-          <Card slug={slug} entry={entry} />
+        Object.entries(filteredIndex).map(([slug, entry], index) => (
+          <Card slug={slug} entry={entry} index={index} />
         ))}
     </div>
   );
