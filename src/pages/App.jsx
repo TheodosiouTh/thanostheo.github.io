@@ -21,11 +21,11 @@ function App() {
           <Header />
           <div className={styles.container}>
             <Switch>
-              <Route path="/blogs">
-                <BlogList />
-              </Route>
               <Route path="/blogs/:slug">
                 <BlogEntry />
+              </Route>
+              <Route path="/blogs">
+                <BlogList />
               </Route>
               <Route path="/">
                 <Main />
