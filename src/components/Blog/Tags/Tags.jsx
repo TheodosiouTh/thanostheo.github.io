@@ -5,7 +5,7 @@ import styles from './Tags.module.scss';
 
 export default function Tags({ tags }) {
   return (
-    <div>
+    <div className={styles.container}>
       {tags &&
         tags.map(tag => (
           <Link to={`/blogs?tag=${tag}`} className={styles.tag} key={tag}>

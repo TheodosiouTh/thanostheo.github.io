@@ -17,7 +17,9 @@ export default function Card({ slug, entry, index }) {
         <div>
           <Tags tags={entry.tags} />
         </div>
-        <div className={styles.blogDate}>{getFormatedDate(entry.date)}</div>
+        <div className={styles.blogDate}>
+          <div>{getFormatedDate(entry.date)}</div>
+        </div>
       </div>
       <Link to={`/blogs/${slug}`} className={styles.title}>
         {entry.title}

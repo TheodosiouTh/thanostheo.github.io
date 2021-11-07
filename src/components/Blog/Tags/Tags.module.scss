@@ -14,3 +14,12 @@
 .tag:hover {
   background-color: sharedStyles.$lighten-background;
 }
+
+@media screen and (max-width: sharedStyles.$medium-screen) {
+  .container {
+    max-width: 100%;
+  }
+  .tag {
+    display: inline-block;
+  }
+}
