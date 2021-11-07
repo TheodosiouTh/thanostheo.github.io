@@ -6,6 +6,8 @@ import moment from 'moment';
 import styles from './BlogEntry.module.scss';
 
 import SyntaxHighlighter from '../../components/CodeHighlighter/CodeHighlighter';
+import Tags from '../../components/Blog/Tags/Tags';
+
 import { readFile } from '../../common/utils';
 
 export default function BlogEntry() {
@@ -46,14 +48,7 @@ export default function BlogEntry() {
   return (
     <div className={styles.container}>
       <div className={styles.blogInfo}>
-        <div>
-          {tags &&
-            tags.map(tag => (
-              <a href={`/blogs?tag=${tag}`} className={styles.tag} key={tag}>
-                {tag}
-              </a>
-            ))}
-        </div>
+        <Tags tags={tags} />
         <div className={styles.blogDate}>
           {moment(date).format('Do MMM YYYY')}
         </div>
