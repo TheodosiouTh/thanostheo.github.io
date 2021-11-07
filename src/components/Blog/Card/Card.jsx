@@ -15,7 +15,7 @@ export default function Card({ slug, entry, index }) {
     >
       <div className={styles.blogInfo}>
         <div>
-          <Tags tags={entry.tags} />
+          <Tags slug={slug} tags={entry.tags} />
         </div>
         <div className={styles.blogDate}>
           <div>{getFormatedDate(entry.date)}</div>

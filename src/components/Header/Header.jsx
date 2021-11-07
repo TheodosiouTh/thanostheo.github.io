@@ -22,7 +22,7 @@ export default function Sidemenu() {
   return (
     <header className={cn({ [styles.hidden]: shouldHide })}>
       <div className={styles.leftSide}>
-        <IconRoute route="/">
+        <IconRoute route="/" title="Home" aria-label="Home">
           <Logo className={styles.logo} />
         </IconRoute>
       </div>

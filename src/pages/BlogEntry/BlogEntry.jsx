@@ -48,7 +48,7 @@ export default function BlogEntry() {
   return (
     <div className={cn(styles.container, 'fadeInDown')}>
       <div className={styles.blogInfo}>
-        <Tags tags={tags} />
+        <Tags slug={slug} tags={tags} />
         <div className={styles.blogDate}>{getFormatedDate(date)}</div>
       </div>
       <h1 className={styles.title}>{title}</h1>
