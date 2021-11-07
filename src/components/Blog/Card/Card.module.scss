@@ -1,0 +1,26 @@
+@use 'shared' as sharedStyles;
+
+.container {
+  display: block;
+  border-bottom: 0.125rem solid sharedStyles.$primary;
+  margin-bottom: 3rem;
+}
+
+.blogInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 2rem;
+  text-decoration: none;
+  display: block;
+  margin: 0.5rem 0;
+
+  color: sharedStyles.$gray !important;
+}
+
+.title:hover {
+  color: sharedStyles.$secondary !important;
+}
