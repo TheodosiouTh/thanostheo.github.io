@@ -65,7 +65,7 @@ ol {
     z-index: -1 !important;
     position: fixed;
     top: 0;
-    transition: right 0.125s sharedStyles.$base-bezier;
+    transition: right 0.25s sharedStyles.$base-bezier;
 
     background-color: sharedStyles.$surface;
 
@@ -92,7 +92,7 @@ ol {
   }
   .openMenu {
     right: 0;
-    transition: right 0.125s sharedStyles.$base-bezier;
+    transition: right 0.25s sharedStyles.$base-bezier;
   }
 }
 
