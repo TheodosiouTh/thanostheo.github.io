@@ -3,7 +3,7 @@ import cn from 'classnames';
 
 /* SUB-COMPONENTS */
 import { IconButton } from '@material-ui/core';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import styles from './Navigation.module.scss';
 
 import Loader from '../Loader/Loader';
