@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { useHistory, useParams } from 'react-router-dom';
+import cn from 'classnames';
 
 import moment from 'moment';
 import styles from './BlogEntry.module.scss';
@@ -46,7 +47,7 @@ export default function BlogEntry() {
   }, []);
 
   return (
-    <div className={styles.container}>
+    <div className={cn(styles.container, 'fadeInDown')}>
       <div className={styles.blogInfo}>
         <Tags tags={tags} />
         <div className={styles.blogDate}>
