@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import styles from './Tags.module.scss';
 
@@ -7,9 +8,9 @@ export default function Tags({ tags }) {
     <div>
       {tags &&
         tags.map(tag => (
-          <a href={`/blogs?tag=${tag}`} className={styles.tag} key={tag}>
+          <Link to={`/blogs?tag=${tag}`} className={styles.tag} key={tag}>
             {tag}
-          </a>
+          </Link>
         ))}
     </div>
   );
