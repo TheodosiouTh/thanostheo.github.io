@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import Tags from '../Tags/Tags';
 
@@ -13,9 +14,9 @@ export default function Card({ slug, entry }) {
         </div>
         <div>{entry.date}</div>
       </div>
-      <a href={`/blogs/${slug}`} className={styles.title}>
+      <Link to={`/blogs/${slug}`} className={styles.title}>
         {entry.title}
-      </a>
+      </Link>
     </div>
   );
 }
