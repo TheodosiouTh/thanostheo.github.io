@@ -12,7 +12,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 1rem;
+  font-size: 1.125rem;
   background-color: sharedStyles.$background;
 }
 
@@ -59,7 +59,7 @@ section {
 }
 
 .fadeInDown {
-  animation: fadeInDown 0.5s sharedStyles.$base-bezier both;
+  animation: fadeInDown 0.375s sharedStyles.$base-bezier both;
 }
 
 @media screen and (max-width: sharedStyles.$small-screen) {
