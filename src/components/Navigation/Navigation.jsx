@@ -41,7 +41,14 @@ export default function Sidemenu() {
           <ol>
             {Object.entries(links).map(([name, section], index) => (
               <li style={{ animationDelay: `${150 * index}ms` }} key={name}>
-                <Link to={section}>{name}</Link>
+                <Link
+                  to={section}
+                  onClick={() => {
+                    setIsMenuOpen(false);
+                  }}
+                >
+                  {name}
+                </Link>
               </li>
             ))}
             {/* <li
