@@ -43,9 +43,11 @@ export default function AboutMe() {
             <a href="https://kritikos-sm.gr/">Kritikos-SM</a> and{' '}
             <a href="https://box.gr/">BOX</a>.
           </p>
-          <p>
-            Here are a few technologies I<span>&#39;</span>
-            ve been working with:
+          <div>
+            <p>
+              Here are a few technologies I<span>&#39;</span>
+              ve been working with:
+            </p>
             <ul>
               <li>Javascript (ES6)</li>
               <li>Golang</li>
@@ -56,7 +58,7 @@ export default function AboutMe() {
               <li>Reddis</li>
               <li>Heroku</li>
             </ul>
-          </p>
+          </div>
         </div>
         <div className={styles.imageContainer}>
           <div className={styles.imageWrapper}>
