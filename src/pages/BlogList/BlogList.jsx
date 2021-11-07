@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+
 import { readFile } from '../../common/utils';
 
 import Card from '../../components/Blog/Card/Card';
@@ -9,6 +10,7 @@ import styles from './BlogList.module.scss';
 export default function BlogList() {
   const [blogIndex, setBlogIndex] = useState({});
   const [filteredIndex, setFilteredIndex] = useState({});
+  const [selectedTag, setSelectedTag] = useState('');
 
   const query = useQuery();
 
@@ -36,17 +38,19 @@ export default function BlogList() {
   }, []);
 
   useEffect(() => {
-    const selectedTag = query.get('tag');
-    if (!selectedTag) {
+    const queryTag = query.get('tag');
+    if (!queryTag) {
       setFilteredIndex(blogIndex);
+      setSelectedTag('');
       return;
     }
-    setFilteredIndex(filterIndexOnTag(blogIndex, selectedTag));
+    setSelectedTag(queryTag);
+    setFilteredIndex(filterIndexOnTag(blogIndex, queryTag));
   }, [blogIndex, query]);
 
   return (
     <div>
-      <h1 className={styles.pageTitle}>Articles</h1>
+      <h1 className={styles.pageTitle}>{selectedTag || 'Articles'}</h1>
       {filteredIndex &&
         Object.entries(filteredIndex).map(([slug, entry]) => (
           <Card slug={slug} entry={entry} />
