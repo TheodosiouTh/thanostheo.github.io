@@ -10,7 +10,7 @@ export default function Card({ slug, entry, index }) {
   return (
     <div
       style={{ animationDelay: `${100 * index}ms` }}
-      className={cn(styles.container, 'show')}
+      className={cn(styles.container, 'fadeInUp')}
     >
       <div className={styles.blogInfo}>
         <div>

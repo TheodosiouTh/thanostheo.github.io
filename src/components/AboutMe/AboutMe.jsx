@@ -10,7 +10,7 @@ export default function AboutMe() {
   const isVisible = isVisibleToUser(ref);
 
   return (
-    <section className={cn({ show: isVisible })} id="about" ref={ref}>
+    <section className={cn({ fadeInUp: isVisible })} id="about" ref={ref}>
       <h2>About Me</h2>
       <div className={styles.content}>
         <div className={styles.text}>

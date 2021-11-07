@@ -11,7 +11,7 @@ export default function Portfolio() {
 
   return (
     <section
-      className={cn(styles.container, { show: isVisible })}
+      className={cn(styles.container, { fadeInUp: isVisible })}
       id="portfolio"
       ref={ref}
     >
