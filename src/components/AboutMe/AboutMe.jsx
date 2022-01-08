@@ -15,20 +15,19 @@ export default function AboutMe() {
       <div className={styles.content}>
         <div className={styles.text}>
           <p>
-            Hello! My name is Thanos and I enjoy solving complex problems with
+            Hello, my name is Thanos! I enjoy solving complex problems with
             efficient, maintainable, and scalable code. My interest in software
-            development started at the age of 14 when I decided to buy
+            engineering started at the age of 14 when I decided to buy and read{' '}
             <a
               href="https://www.goodreads.com/book/show/52094843-c"
               target="_blank"
               rel="noreferrer"
             >
-              {' '}
               this book{' '}
             </a>
-            in order to learn how to program computer applications. After I
-            finished reading the book I knew that I wanted to be a software
-            engineer, so a few years later after a lot of studying, I got my{' '}
+            to learn how to program computer applications. After that,
+            I knew that I wanted to be a Software
+            Engineer, so a few years later, I got my{' '}
             <strong>B.Sc. Computer Science </strong>
             at the{' '}
             <a href="https://www.cs.unipi.gr/index.php?lang=en">
@@ -38,7 +37,7 @@ export default function AboutMe() {
           </p>
           <p>
             Fast-forward to today, and I<span>&#39;</span>
-            ve had the privilege of working at one of the biggest software UX &
+            ve had the privilege of working at one of the biggest UX Design &
             Software Development Agencies in Greece at products such as{' '}
             <a href="https://kritikos-sm.gr/">Kritikos-SM</a> and{' '}
             <a href="https://box.gr/">BOX</a>.
