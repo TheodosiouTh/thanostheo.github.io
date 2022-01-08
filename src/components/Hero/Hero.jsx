@@ -26,7 +26,7 @@ export default function Hero() {
         iou.
       </Typist>
       <p className={styles.introduction}>
-        I am a server-side engineer based in Athens with a knack for solving
+        I am a Backend engineer based in Athens with a knack for solving
         difficult problems. Currently, I am an engineer at
         <a href="https://thinkdesquared.com/"> Desquared </a>
         focused on making online shopping more accessible to consumers and
