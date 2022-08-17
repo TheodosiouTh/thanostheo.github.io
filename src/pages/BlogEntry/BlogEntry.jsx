@@ -43,7 +43,7 @@ export default function BlogEntry() {
       },
     );
     readFile(`/blog-entries/${slug}/text.md`, undefined, setText);
-  }, []);
+  }, [history, slug]);
 
   return (
     <div className={cn(styles.container, 'fadeInDown')}>
