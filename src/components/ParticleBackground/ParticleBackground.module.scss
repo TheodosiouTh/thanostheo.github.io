@@ -1,4 +1,4 @@
-@import '../../global/shared.scss';
+@use 'shared' as sharedStyles;
 
 .particles {
   display: block;
@@ -20,7 +20,7 @@
   z-index: -5;
 }
 
-@media screen and (max-width: $small-screen) {
+@media screen and (max-width: sharedStyles.$small-screen) {
   .particles {
     display: none;
   }

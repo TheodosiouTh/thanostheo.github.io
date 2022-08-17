@@ -1,4 +1,4 @@
-@import '../../global//shared.scss';
+@use 'shared' as sharedStyles;
 
 .content {
   display: flex;
@@ -33,9 +33,9 @@
     position: absolute;
     top: 1rem;
     left: 1rem;
-    transition: all 0.25s $base-bezier;
+    transition: all 0.25s sharedStyles.$base-bezier;
 
-    border: 0.25rem solid $primary;
+    border: 0.25rem solid sharedStyles.$primary;
     border-radius: 0.25rem;
 
     content: '';
@@ -45,7 +45,7 @@
   .imageWrapper:hover:after {
     top: 0.5rem;
     left: 0.5rem;
-    transition: all 0.25s $base-bezier;
+    transition: all 0.25s sharedStyles.$base-bezier;
   }
 
   .text {
@@ -68,7 +68,7 @@
       }
       li::before {
         content: '\2666';
-        color: $primary;
+        color: sharedStyles.$primary;
         font-weight: bold;
         display: inline-block;
         width: 1rem;
@@ -78,7 +78,7 @@
   }
 }
 
-@media screen and (max-width: $medium-screen) {
+@media screen and (max-width: sharedStyles.$medium-screen) {
   .content {
     flex-direction: column;
 
@@ -91,7 +91,6 @@
     p {
       margin-top: 1rem !important;
       width: 100%;
-      text-align: justify;
     }
 
     ul {
@@ -104,7 +103,7 @@
   }
 }
 
-@media screen and (max-width: $small-screen) {
+@media screen and (max-width: sharedStyles.$small-screen) {
   .imageWrapper {
     width: 13rem !important;
     height: 13rem !important;

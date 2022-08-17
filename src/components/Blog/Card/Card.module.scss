@@ -1,0 +1,50 @@
+@use 'shared' as sharedStyles;
+
+.container {
+  display: block;
+  border-bottom: 0.125rem solid sharedStyles.$primary;
+  margin-bottom: 1.75rem;
+}
+
+.blogInfo {
+  display: flex;
+  flex: 2;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 2rem;
+  text-decoration: none;
+  display: block;
+  margin: 0.5rem 0;
+
+  color: sharedStyles.$gray !important;
+}
+
+.title:hover {
+  color: sharedStyles.$secondary !important;
+}
+
+@media screen and (max-width: sharedStyles.$small-screen) {
+  .container {
+    margin-bottom: 2rem;
+  }
+  .blogInfo {
+    align-items: center;
+  }
+
+  .blogInfo:first-child {
+    flex-basis: 50%;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .blogDate {
+    margin-top: 0.75rem;
+    max-width: 100%;
+  }
+}

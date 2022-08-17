@@ -1,4 +1,4 @@
-@import '../../global//shared.scss';
+@use 'shared' as sharedStyles;
 
 .content {
   margin-top: 1rem;
@@ -12,7 +12,7 @@
   }
 }
 
-@media screen and (max-width: $large-screen) {
+@media screen and (max-width: sharedStyles.$large-screen) {
   .container {
     margin-top: 3rem;
   }

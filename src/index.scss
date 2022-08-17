@@ -1,5 +1,5 @@
+@use 'shared' as sharedStyles;
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-@import './global/shared.scss';
 
 html,
 * {
@@ -9,16 +9,17 @@ html,
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 1rem;
-  background-color: $background;
+  font-size: 1.125rem;
+  color: sharedStyles.$white;
+  background-color: sharedStyles.$background;
 }
 
 section {
   margin-bottom: 6.25rem;
-  color: $white;
+  color: sharedStyles.$white;
   margin-top: 0;
 }
 
@@ -50,15 +51,26 @@ section {
 }
 
 .special {
-  color: $accent;
+  color: sharedStyles.$accent;
   font-weight: bold;
 }
 
-.show {
-  animation: fadeInUp 0.5s $base-bezier both;
+.fadeInUp {
+  animation: fadeInUp 0.5s sharedStyles.$base-bezier both;
 }
 
-@media screen and (max-width: $xsmall-screen) {
+.fadeInDown {
+  animation: fadeInDown 0.375s sharedStyles.$base-bezier both;
+}
+
+@media screen and (max-width: sharedStyles.$small-screen) {
+  body {
+    font-size: 1.125rem;
+    word-spacing: 0.125rem;
+  }
+}
+
+@media screen and (max-width: sharedStyles.$xsmall-screen) {
   section {
     padding: 0 0.75rem;
   }
@@ -68,6 +80,17 @@ section {
   from {
     opacity: 0;
     transform: translate3d(0, 1rem, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -1rem, 0);
   }
   to {
     opacity: 1;

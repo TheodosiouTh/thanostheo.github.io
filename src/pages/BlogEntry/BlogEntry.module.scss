@@ -1,0 +1,77 @@
+@use 'shared' as sharedStyles;
+
+.blogInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title {
+  margin: 1rem 0 0;
+  font-size: 2.25rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.headerImage {
+  max-width: 95%;
+  display: block;
+  margin: 0 auto;
+}
+
+.textContainer {
+  :first-child {
+    margin-top: 0;
+  }
+  h1 {
+    margin: 1.75rem 0 0.75rem;
+  }
+
+  h2 {
+    margin: 1.5rem 0 0.5rem;
+  }
+
+  p {
+    margin-bottom: 1.5rem;
+  }
+
+  pre,
+  code {
+    margin-bottom: 1rem;
+  }
+
+  hr {
+    margin: 1rem 0;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto 1rem;
+  }
+}
+
+@media screen and (max-width: sharedStyles.$medium-screen) {
+  .textContainer {
+    * {
+      justify-content: center;
+      margin: 0 0.5rem;
+    }
+
+    pre,
+    code {
+      margin: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: sharedStyles.$small-screen) {
+  .blogInfo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blogDate {
+    font-size: 1.5rem;
+    margin-top: 1.25rem;
+  }
+}

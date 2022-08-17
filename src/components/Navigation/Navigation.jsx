@@ -3,6 +3,7 @@ import cn from 'classnames';
 
 /* SUB-COMPONENTS */
 import { IconButton } from '@material-ui/core';
+import { HashLink as Link } from 'react-router-hash-link';
 import styles from './Navigation.module.scss';
 
 import Loader from '../Loader/Loader';
@@ -13,8 +14,9 @@ const NavigationToggle = lazy(async () => {
 });
 
 const links = {
-  About: '#about',
-  Portfolio: '#portfolio',
+  About: '/#about',
+  Portfolio: '/#portfolio',
+  Blog: '/blogs',
 };
 
 export default function Sidemenu() {
@@ -39,7 +41,14 @@ export default function Sidemenu() {
           <ol>
             {Object.entries(links).map(([name, section], index) => (
               <li style={{ animationDelay: `${150 * index}ms` }} key={name}>
-                <a href={section}>{name}</a>
+                <Link
+                  to={section}
+                  onClick={() => {
+                    setIsMenuOpen(false);
+                  }}
+                >
+                  {name}
+                </Link>
               </li>
             ))}
             {/* <li

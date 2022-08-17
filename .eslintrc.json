@@ -17,14 +17,18 @@
   "rules": {
     "arrow-parens": ["error", "as-needed"],
     "quotes": [2, "single", { "avoidEscape": true }],
+    "function-paren-newline": "warn",
+    "implicit-arrow-linebreak": "warn",
     "import/no-unresolved": [2, { "caseSensitive": false }],
     "react/prop-types": 0,
     "object-curly-newline": 0,
+    "operator-linebreak": "warn",
     "import/prefer-default-export": 0,
     "no-unused-vars": "warn",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/jsx-one-expression-per-line": "off",
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-props-no-spreading": "off"
   }
 }

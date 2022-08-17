@@ -1,0 +1,40 @@
+@use 'shared' as sharedStyles;
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+
+  margin-top: 5.5rem;
+
+  a {
+    color: sharedStyles.$primary;
+    transition: color 0.125s sharedStyles.$base-bezier;
+  }
+
+  a:hover {
+    color: sharedStyles.$secondary;
+    transition: color 0.125s sharedStyles.$base-bezier;
+  }
+}
+
+@media screen and (max-width: sharedStyles.$large-screen) {
+  .container {
+    width: 720px;
+  }
+}
+
+@media screen and (max-width: sharedStyles.$medium-screen) {
+  .container {
+    width: 540px;
+  }
+}
+
+@media screen and (max-width: sharedStyles.$xsmall-screen) {
+  .container {
+    width: 100%;
+  }
+
+  section {
+    padding: 0 0.75rem;
+  }
+}
